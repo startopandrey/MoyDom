@@ -1,0 +1,21 @@
+.card-heart-container {
+  position: relative;
+  .card-heart {
+    color: white;
+    z-index: 10;
+  }
+  span{
+      width: 15px;
+      height: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 0.5rem;
+      position: absolute;
+      top: -5px;
+      right: -8px;
+      border-radius: 50%;
+     background-color: red;
+  }
+}

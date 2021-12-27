@@ -1,0 +1,45 @@
+.home-categories-card {
+  .home-categories-card-img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    filter: brightness(0.6) contrast(0.8);
+    background-size: cover !important;
+  }
+  .home-categories-card-text {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .home-categories-card {
+    .home-categories-card-text {
+      text-align: left;
+    }
+  }
+}
+@media screen and (max-width: 545px) {
+  .home-categories-card {
+    .home-categories-card-img {
+      width: 100%;
+      height: 200px;
+    }
+    .home-categories-card-text {
+      font-size: 1.5rem;
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .home-categories-card {
+    .home-categories-card-img {
+      width: 100%;
+      height: 180px;
+    }
+    .home-categories-card-text {
+      font-size: 1.3rem;
+        margin: 0.5rem 0;
+    }
+  }
+}
+

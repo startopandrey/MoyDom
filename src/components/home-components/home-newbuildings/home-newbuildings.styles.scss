@@ -1,0 +1,120 @@
+$blue-color: #019cde;
+.home-site-price {
+  display: none;
+  color: $blue-color;
+  font-size: 1.4rem;
+  font-weight: 700;
+  span {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+}
+.home-newbuilding {
+  width: 100%;
+  height: auto;
+  box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+  .home-newbuilding-img {
+    width: 100%;
+    height: 400px;
+    background-size: cover !important;
+    border-radius: 10px !important;
+  }
+
+  .home-newbuilding-data {
+    padding: 1rem;
+    .home-newbuilding-img {
+      width: 100%;
+      height: 300px;
+      background-size: cover !important;
+      border-radius: 10px !important;
+    }
+    .home-address {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      .home-address-data {
+        .home-address-title {
+        }
+        span {
+          color: #a9a9a9;
+          display: flex;
+          align-items: center;
+          font-size: 0.8rem;
+        }
+      }
+      .logo-company {
+        width: 50px;
+        height: 100%;
+      }
+      .home-address-heart {
+        font-size: 2.3rem;
+      }
+    }
+    .home-about {
+      margin-bottom: 1rem;
+      .home-about-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.5rem;
+        h4 {
+          font-size: 1.1rem;
+        }
+        span {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .home-site {
+      display: flex;
+      justify-content: space-between;
+
+      .home-site-url {
+        display: flex;
+        align-items: center;
+        a {
+          margin-left: 0.5rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mobile-hidden {
+    display: none !important;
+  }
+  .mobile-add {
+    display: block;
+  }
+  .home-newbuilding {
+    margin: 2rem 0;
+    .home-newbuilding-img {
+      width: 100%;
+      height: 250px;
+      background-size: cover !important;
+      border-radius: 10px !important;
+    }
+    .home-newbuilding-data {
+      padding: 1rem;
+      .home-address {
+        .home-address-heart {
+          font-size: 1.8rem;
+        }
+        span {
+          margin-top: 0.5rem;
+          font-size: 0.5rem;
+        }
+      }
+      .home-site {
+        .home-site-button {
+          width: 50px;
+          border-radius: 10px;
+          font-size: 0.6rem;
+          padding: 2px;
+        }
+      }
+    }
+  }
+}

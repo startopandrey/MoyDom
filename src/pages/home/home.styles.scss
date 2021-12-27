@@ -1,0 +1,417 @@
+.mobile-add {
+  display: none !important;
+}
+.home-title {
+  text-align: center;
+  font-family: 'Arsenal';
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.home {
+  .home-categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .home-newbuild {
+    margin-bottom: 2rem;
+    .home-newbuild-title {
+      text-align: center;
+      font-family: 'Arsenal';
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+    .home-newbuild-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 1rem;
+    }
+  }
+  .home-benefit {
+    margin-bottom: 2rem;
+    .home-benefit-title {
+      margin-bottom: 2rem;
+    }
+    .home-benefit-container {
+      background-color: #f2f6ff;
+    }
+  }
+  .home-benefit-data {
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 1500px;
+    margin: 0 auto;
+    .home-benefit-img {
+      width: 450px;
+    }
+    .home-benefit-items {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: 1fr 1fr;
+      .home-benefit-item {
+        display: flex;
+        align-items: center;
+        img {
+          width: 80px;
+          height: 80px;
+        }
+        .home-benefit-text {
+          margin-left: 1.8rem;
+          h3 {
+            font-family: 'Arsenal', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+          }
+          p {
+            color: #b6b6b6;
+          }
+        }
+      }
+    }
+  }
+  .home-articles {
+    margin-bottom: 3rem;
+    .home-title {
+      text-align: left;
+    }
+    .home-articles-data {
+      .home-articles-house {
+        margin-bottom: 1rem;
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        gap: 1rem;
+        .home-articles-left {
+          padding: 3.5rem 3rem;
+          border-radius: 10px;
+          background-size: cover !important;
+          color: white;
+          h3 {
+            font-family: 'Arsenal', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+          }
+          ul {
+            li {
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+        .home-articles-right {
+          background-color: #5894c9;
+          text-align: end;
+          border-radius: 10px;
+          color: white;
+          padding: 3.5rem 4rem;
+          .home-data {
+            h3 {
+              font-family: 'Arsenal', sans-serif;
+              font-size: 1.8rem;
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+      }
+      .home-articles-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        .home-articles-card {
+          border-radius: 10px;
+          width: 100%;
+          height: 250px;
+          background-size: cover !important;
+          padding: 5rem 3rem;
+          color: white;
+          display: flex;
+          flex-direction: column;
+
+          align-items: center;
+
+          h3 {
+            font-family: 'Arsenal', sans-serif;
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            text-align: center;
+          }
+        }
+        .home-articles-card-icon {
+          border-radius: 10px;
+          justify-content: center;
+          height: 250px;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          color: white;
+          background-color: #5894c9;
+          h3 {
+            font-family: 'Arsenal', sans-serif;
+            font-size: 1.8rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+    .home-articles-button {
+      display: flex;
+      justify-content: flex-end;
+      margin: 1rem 0;
+
+      button {
+        font-size: 0.8rem;
+        font-family: 'Arsenal', sans-serif !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .home-benefit {
+    .home-benefit-container {
+      .home-benefit-data {
+        .home-benefit-items {
+          grid-template-columns: 1fr !important;
+          .home-benefit-item {
+            display: flex;
+            align-items: center;
+            img {
+              width: 80px;
+              height: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .home-title {
+    text-align: left;
+    font-size: 2.3rem;
+    margin-bottom: 0rem;
+  }
+  .home {
+    .mobile-add {
+      display: flex !important;
+    }
+    .home-articles {
+      .home-title {
+        text-align: left;
+      }
+      .home-articles-data {
+        .home-articles-house {
+          margin: 1rem 0;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1rem;
+          .home-articles-left {
+            padding: 3.5rem 3rem;
+            border-radius: 0px;
+
+            ul {
+              li {
+                margin-bottom: 0.5rem;
+              }
+            }
+          }
+        }
+        .home-articles-cards {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto;
+          gap: 1rem;
+          .home-articles-card {
+            border-radius: 0px;
+            width: 100%;
+            height: 150px;
+
+            padding: 3rem 3rem;
+            color: white;
+            display: flex;
+
+            h3 {
+              font-family: 'Arsenal', sans-serif;
+              font-size: 1.2rem;
+            }
+            span {
+              font-size: 0.7rem;
+            }
+          }
+        }
+      }
+    }
+    .home-categories {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    .home-newbuild {
+      overflow-x: scroll;
+
+      .home-newbuild-cards {
+        display: grid;
+        grid-template-columns: 270px 270px 270px;
+        gap: 1rem;
+        width: 100%;
+        overflow-x: scroll;
+        grid-auto-flow: column;
+
+        &::-webkit-scrollbar-track {
+          // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 1);
+          border-radius: 3px;
+          background-color: #019cde;
+          margin: 0 170px;
+        }
+
+        &::-webkit-scrollbar {
+          height: 10px;
+          margin: 100px;
+
+          background-color: transparent;
+        }
+
+        &::-webkit-scrollbar-thumb {
+          border-radius: 3px;
+
+          border: 0.5px solid #019cde;
+          background-color: white;
+        }
+      }
+    }
+  }
+  .home-benefit {
+    .home-benefit-container {
+      .home-benefit-data {
+        .home-benefit-img {
+          display: none;
+        }
+        max-width: 728px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .home-benefit {
+    .home-benefit-container {
+      .home-benefit-data {
+        .home-benefit-img {
+          display: none;
+        }
+        max-width: 500px !important;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 545px) {
+  .home-title {
+    font-size: 2rem;
+  }
+  .home {
+    .home-newbuild {
+      .home-newbuild-cards {
+        grid-template-columns: 230px 230px 230px;
+        gap: 1rem;
+        &::-webkit-scrollbar-track {
+          margin: 0 100px;
+        }
+      }
+    }
+  }
+  .home-benefit {
+    .home-benefit-container {
+      .home-benefit-data {
+        .home-benefit-img {
+          display: none;
+        }
+        max-width: 400px !important;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+@media screen and (max-width: 420px) {
+  .home {
+    .home-articles {
+      .home-title {
+        text-align: left;
+      }
+      .home-articles-data {
+        .home-articles-house {
+          margin: 1rem 0;
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 1rem;
+          .home-articles-left {
+            padding: 2rem 3rem;
+            border-radius: 0px;
+            h3 {
+              font-size: 1.5rem;
+            }
+            ul {
+              li {
+                font-size: 0.7rem;
+                margin-bottom: 0.5rem;
+              }
+            }
+          }
+        }
+        .home-articles-cards {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-template-rows: auto auto;
+          gap: 1rem;
+          .home-articles-card {
+            border-radius: 0px;
+
+            height: 100px;
+
+            padding: 1.5rem 2rem;
+
+            h3 {
+              font-size: 0.8rem;
+            }
+            span {
+              font-size: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  .home-benefit {
+    .home-benefit-container {
+      .home-benefit-data {
+        .home-benefit-img {
+          // display: none;
+        }
+        // max-width: 300px;
+        margin: 0 auto;
+        .home-benefit-items {
+          .home-benefit-item {
+            img {
+              width: 60px;
+              height: 60px;
+            }
+            .home-benefit-text {
+              margin-left: 1.8rem;
+              h3 {
+                font-family: 'Arsenal', sans-serif;
+                font-size: 1.3rem;
+                margin-bottom: 0.5rem;
+              }
+              p {
+                font-size: 0.6rem;
+                color: #b6b6b6;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+$--primary: rgb(174, 174, 174);
+.btn {
+  padding: 0.5rem 1.3rem;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    background-color: #fff;
+    color: black;
+  }
+}
+.btn--primary {
+  background-color: $--primary;
+}
+.btn--outline {
+    padding: 0.5rem 1.3rem;
+      border-radius: 4px;
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid $--primary;
+  transition: all 0.2s ease-in-out;
+}
+.btn--medium {
+     padding: 0.5rem 1.3rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      color: #fff;
+}
+.btn--large{
+         padding: 0.8rem 1.6rem;
+      border-radius: 4px;
+      font-size: 1.4rem;
+      color: #fff;
+}

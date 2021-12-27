@@ -1,0 +1,52 @@
+.header {
+  .header-img {
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    height: 600px;
+  }
+  .header-container {
+    height: 100%;
+    .header-title {
+      margin-top: 6rem;
+      margin-bottom: 3rem;
+      text-align: center;
+      font-size: 3.75rem;
+      font-family: 'Arsenal', sans-serif;
+      color: white;
+    }
+  }
+}
+@media screen and (max-width: 1250px) {
+  .header {
+    .header-container {
+      .header-title {
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+
+        font-size: 3rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1050px) {
+  .header {
+    .header-img {
+      height: 500px;
+    }
+    .header-container {
+      .header-title {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 545px) {
+   .header {
+    .header-img {
+      height: 400px;
+    }
+  
+  }
+}

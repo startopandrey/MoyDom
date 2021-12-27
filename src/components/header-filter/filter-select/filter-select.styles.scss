@@ -1,0 +1,52 @@
+.filter-form {
+  background-color: rgb(255, 255, 255) !important;
+  width: 100%;
+  border-radius: 10px;
+  padding: 0;
+  height: 40px;
+  .demo-simple-select-text {
+    font-size: 1rem;
+    position: absolute;
+    top: -0.5rem;
+  }
+}
+button {
+  border: none !important;
+}
+
+.filter-sale-title {
+  font-family: 'Arsenal', sans-serif;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+#demo-simple-select {
+  padding: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .filter-sale-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media screen and (max-width: 545px) {
+  .filter-form {
+    .demo-simple-select-text {
+      position: absolute;
+      top: -0.6rem;
+      font-size: 0.8rem;
+    }
+    background-color: rgb(255, 255, 255) !important;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0;
+    height: 30px;
+  }
+  .filter-sale-title {
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+  #demo-simple-select {
+    padding: 4px;
+    font-size: 0.7rem;
+  }
+}

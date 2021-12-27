@@ -1,0 +1,68 @@
+.filter-buttons {
+  .filter-button,
+  .button-active {
+    width: 160px;
+    height: 60px;
+    border-radius: 30px 30px 0px 0px;
+    margin-bottom: -8px;
+    border-bottom: none !important;
+    box-shadow: none !important;
+  }
+}
+.header-filter {
+  position: relative;
+}
+.filter-container{
+  margin-bottom: 12rem;
+}
+@media screen and (max-width: 1200px) {
+  .filter-container{
+  margin-bottom: 16rem;
+}
+  .filter-buttons {
+    .filter-button,
+    .button-active {
+      width: 130px;
+      height: 50px;
+      font-size: 0.8rem;
+      border-radius: 25px 25px 0px 0px;
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-filter {
+    margin-top: 1rem;
+  }
+  .filter-container {
+    display: flex;
+    justify-content: center;
+   margin-bottom: 9rem;
+  }
+}
+@media screen and (max-width: 545px) {
+   .filter-container {
+   
+   margin-bottom: 6rem;
+  }
+  .filter-buttons {
+    .filter-button,
+    .button-active {
+      width: 100px;
+      height: 45px;
+      font-size: 0.6rem;
+      border-radius: 16px 16px 0px 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .filter-buttons {
+    .filter-button,
+    .button-active {
+      width: 70px;
+      height: 40px;
+      font-size: 0.5rem;
+      border-radius: 16px 16px 0px 0px;
+    }
+  }
+}
