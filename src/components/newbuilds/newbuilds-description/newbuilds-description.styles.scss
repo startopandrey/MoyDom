@@ -1,0 +1,32 @@
+.newbuild-feature-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: rgba(7, 18, 48, 0.55);
+}
+.newbuild-feature-right-list {
+  .newbuild-feature-right-item {
+    margin-bottom: 0.4rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .newbuild-feature-title {
+    font-size: 1.3em;
+  }
+  .newbuild-feature-right-list {
+    .newbuild-feature-right-item {
+      margin-bottom: 0.4rem;
+      font-size: 0.8rem;
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .newbuild-feature-title {
+    font-size: 1.3rem;
+  }
+  .newbuild-feature-right-list {
+    .newbuild-feature-right-item {
+      margin-bottom: 0.4rem;
+      font-size: 0.7rem;
+    }
+  }
+}

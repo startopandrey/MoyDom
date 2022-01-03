@@ -19,6 +19,7 @@ import HomeArticleIconHouse from '../../assets/home-house.png';
 import HomeArticleIconTs from '../../assets/home-ts.png';
 import HomeArticleIconAuto from '../../assets/home-auto.png';
 import HomeNewBuild from '../../components/home-components/home-newbuildings/home-newbuildings.component';
+
 const CARDS = [
   {
     img: HomeCategories1,
@@ -37,8 +38,46 @@ const CARDS = [
     text: 'Дачи',
   },
 ];
+const HOMENEWBUILD = [
+  {
+    title: 'ЖК Sky Builds',
+    address: 'ул Карасув №35',
+    floors: '12',
+    date: '2 кв. 2022',
+    rooms: '4',
+    url: 'skybuilds.uz',
+    logo: Logo,
+    id: 1,
+    price: '450',
+    img: HomeNewImg,
+  },
+  {
+    title: 'ЖК Sky Builds',
+    address: 'ул Карасув №35',
+    floors: '12',
+    date: '2 кв. 2022',
+    rooms: '4',
+    url: 'skybuilds.uz',
+    logo: Logo,
+    id: 1,
+    price: '450',
+    img: HomeNewImg,
+  },
+  {
+    title: 'ЖК Sky Builds',
+    address: 'ул Карасув №35',
+    floors: '12',
+    date: '2 кв. 2022',
+    rooms: '4',
+    url: 'skybuilds.uz',
+    logo: Logo,
+    id: 1,
+    price: '450',
+    img: HomeNewImg,
+  },
+];
 const Home = () => (
-  <div className="home">
+  <div key={1} className="home">
     <div></div>
     <div className="home-categories container">
       {CARDS.map(card => (
@@ -51,42 +90,20 @@ const Home = () => (
     <div className="home-newbuild container">
       <h1 className="home-title">Новостройки</h1>
       <div className="home-newbuild-cards ">
-        <HomeNewBuild
-          title="ЖК Sky Builds"
-          address="ул Карасув №35"
-          floors="12"
-          date="2 кв. 2022"
-          rooms="4"
-          url="skybuilds.uz"
-          logo={Logo}
-          id={1}
-          price="450"
-          img={HomeNewImg}
-        ></HomeNewBuild>
-        <HomeNewBuild
-          title="ЖК Sky Builds"
-          address="ул Карасув №35"
-          floors="12"
-          date="2 кв. 2022"
-          rooms="4"
-          url="skybuilds.uz"
-          logo={Logo}
-          price="450"
-          id={1}
-          img={HomeNewImg}
-        ></HomeNewBuild>
-        <HomeNewBuild
-          title="ЖК Sky Builds"
-          address="ул Карасув №35"
-          floors="12"
-          date="2 кв. 2022"
-          rooms="4"
-          url="skybuilds.uz"
-          logo={Logo}
-          price="450"
-          id={1}
-          img={HomeNewImg}
-        ></HomeNewBuild>
+        {HOMENEWBUILD.map(card => (
+          <HomeNewBuild
+            title={card.title}
+            address={card.address}
+            floors={card.floors}
+            date={card.date}
+            rooms={card.rooms}
+            url={card.url}
+            logo={card.logo}
+            id={card.id}
+            price={card.price}
+            img={card.img}
+          ></HomeNewBuild>
+        ))}
       </div>{' '}
     </div>
     <div className="home-benefit ">
@@ -217,9 +234,8 @@ const Home = () => (
           </div>
         </div>
         <div className="mobile-add home-articles-button">
-        <Button  variant="contained">
-          Больше статей
-        </Button></div>
+          <Button variant="contained">Больше статей</Button>
+        </div>
       </div>
     </div>
   </div>

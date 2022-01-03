@@ -12,13 +12,17 @@
 .header-filter {
   position: relative;
 }
-.filter-container{
-  margin-bottom: 12rem;
+.filter-container {
+  margin-bottom: 18rem;
+  padding-bottom: 1rem;
 }
-@media screen and (max-width: 1200px) {
-  .filter-container{
-  margin-bottom: 16rem;
-}
+@media screen and (max-width: 1400px) {
+  .filter-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+
+  }
   .filter-buttons {
     .filter-button,
     .button-active {
@@ -33,16 +37,11 @@
   .header-filter {
     margin-top: 1rem;
   }
-  .filter-container {
-    display: flex;
-    justify-content: center;
-   margin-bottom: 9rem;
-  }
+ 
 }
 @media screen and (max-width: 545px) {
-   .filter-container {
-   
-   margin-bottom: 6rem;
+  .filter-container {
+    margin-bottom: 3rem;
   }
   .filter-buttons {
     .filter-button,
@@ -59,7 +58,7 @@
   .filter-buttons {
     .filter-button,
     .button-active {
-      width: 70px;
+      width: 80px;
       height: 40px;
       font-size: 0.5rem;
       border-radius: 16px 16px 0px 0px;

@@ -1,12 +1,10 @@
 .navbar-container {
-  
   background: rgba(#000000, 0.4);
 }
 .navbar-items {
- 
   height: 80px;
   display: flex !important;
-  justify-content: end !important;
+  justify-content: flex-end !important;
   align-items: center;
   font-size: 1rem;
   .navbar-user {
@@ -88,31 +86,34 @@
   }
   .navbar-items {
     // position: relative;
+    display: block;
   }
   .nav-menu {
-    
-    justify-content: end;
+    justify-content: flex-end;
+
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1000px;
+    height: 1500px;
+    padding-bottom: 4rem;
     position: absolute;
     // top: 100%;
-   
 
     left: -100%;
     opacity: 0;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.2s ease-in;
     font-weight: 500 !important;
   }
   .nav-menu.active {
     left: 0;
     // top: 100%;
     opacity: 1;
-    transition: all 0.3s ease-in-out;
-    z-index: 1;
-    
+    // transition: all 0.3s ease-in-out;
+    z-index: 10;
+    position: fixed;
+    padding-bottom: 13rem;
     background: rgba(#000000, 0.8);
+    
   }
   .nav-links {
     text-align: center;

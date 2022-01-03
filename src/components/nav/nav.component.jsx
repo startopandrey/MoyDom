@@ -22,70 +22,70 @@ class Navbar extends Component {
   render() {
     return (
       <div className="navbar-container">
-  
-          <nav className="navbar-items container">
-            <div className="menu-icon" onClick={this.handleClick}>
-              {this.state.clicked ? (
-                <CloseIcon sx={{ color: '#fff' }}></CloseIcon>
-              ) : (
-                <DehazeIcon sx={{ color: '#fff' }}> </DehazeIcon>
-              )}
-            </div>
-            <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
-              {MenuItems.map((item, index) => {
-                return (
-                  <li key={index}>
-                    <a className={item.cName} htef={item.url}>
-                      {item.title}
+        <nav className="navbar-items container">
+          <div className="menu-icon" onClick={this.handleClick}>
+            {this.state.clicked ? (
+              <CloseIcon sx={{ color: '#fff' }}></CloseIcon>
+            ) : (
+              <DehazeIcon sx={{ color: '#fff' }}> </DehazeIcon>
+            )}
+          </div>
+          <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
+            {MenuItems.map(({ cName, url, title }, index) => {
+              return (
+                <li onClick={this.handleClick} key={index}>
+                  <a href="">
+                    <Link className={cName} to={url}>
+                      {title}
+                    </Link>
+                  </a>
+                </li>
+              );
+            })}
+            <ul className="navbar-items-mobile">
+              <li>
+                <ul>
+                  <li>Наши контакты</li>
+                  <li>
+                    <a href="tel:+998 33 339 3334">+998 33 339 3334</a>
+                  </li>
+                  <li>почта Mail.ru</li>
+                </ul>
+              </li>
+              <li>
+                <h4>Мы в соц.сетях</h4>
+                <ul className="navbar-mobile-social">
+                  <li>
+                    <a href="">
+                      <TelegramIcon></TelegramIcon>
                     </a>
                   </li>
-                );
-              })}
-              <ul className="navbar-items-mobile">
-                <li>
-                  <ul>
-                    <li>Наши контакты</li>
-                    <li>
-                      <a href="tel:+998 33 339 3334">+998 33 339 3334</a>
-                    </li>
-                    <li>почта Mail.ru</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>Мы в соц.сетях</h4>
-                  <ul className="navbar-mobile-social">
-                    <li>
-                      <a href="">
-                        <TelegramIcon></TelegramIcon>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <InstagramIcon></InstagramIcon>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="">
-                        <Facebook></Facebook>
-                      </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
+                  <li>
+                    <a href="">
+                      <InstagramIcon></InstagramIcon>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <Facebook></Facebook>
+                    </a>
+                  </li>
+                </ul>
+              </li>
             </ul>
-            <div className="navbar-user">
-              <CardHeart num={10}></CardHeart>
-              <div className="navbar-user-profile">
-                <h4 className="navbar-user-profile-text">Моя профиль</h4>
-                <AccountCircleOutlinedIcon
-                  fontSize="medium"
-                  className="navbar-user-profile-icon"
-                ></AccountCircleOutlinedIcon>
-              </div>
+          </ul>
+          <div className="navbar-user">
+            <CardHeart num={10}></CardHeart>
+            <div className="navbar-user-profile">
+              <h4 className="navbar-user-profile-text">Моя профиль</h4>
+              <AccountCircleOutlinedIcon
+                fontSize="medium"
+                className="navbar-user-profile-icon"
+              ></AccountCircleOutlinedIcon>
             </div>
-            {/* <Button>Sign up</Button> */}
-          </nav>
-        
+          </div>
+          {/* <Button>Sign up</Button> */}
+        </nav>
       </div>
     );
   }

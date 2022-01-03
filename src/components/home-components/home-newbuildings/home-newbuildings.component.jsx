@@ -3,6 +3,7 @@ import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import LanguageIcon from '@mui/icons-material/Language';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import './home-newbuildings.styles.scss';
+import { Link } from 'react-router-dom';
 import { Button } from '@mui/material';
 const HomeNewBuild = ({
   title,
@@ -59,7 +60,7 @@ const HomeNewBuild = ({
             <span>/ месяц</span>
           </div>
           <Button className="home-site-button" variant="contained">
-           Перейти
+            <Link to="/newbuild">Перейти</Link>
           </Button>
         </div>
       </div>
@@ -67,3 +68,30 @@ const HomeNewBuild = ({
   );
 };
 export default HomeNewBuild;
+// const FILTERPROPS = [
+//   {
+//     buy: {
+//       type: ['Все', 'Квартиры', 'Дома', 'Нежилая недвижимость', 'Дачи'],
+//       price: true,
+//       region: [
+//         'Все',
+//         'Ташкент',
+//         'Ташкентская область',
+//         'Самарканд',
+//         'Бухара',
+//         'Андижан',
+//         'Навой',
+//         'Кашкадарья',
+//         'Навой',
+//         'Наманган',
+//         'Сырдарья',
+//         'Сурхандарья',
+//         'Ферган',
+//         'Хорезм',
+//         'Навоий',
+//         'Наманган',
+//         'Джизак',
+//       ],
+//     }
+//   },
+// ];

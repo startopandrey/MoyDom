@@ -1,0 +1,345 @@
+.gallery-house {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 2rem 0;
+  .gallery-house-img {
+    width: 100%;
+    height: auto;
+    border-radius: 28px;
+  }
+  .gallery-house-right {
+    position: relative;
+    .gallery-house-overlay {
+      position: absolute;
+      width: 350px;
+      right: 70px;
+      top: 40px;
+      height: 200px;
+      border: 1px solid #019cde;
+      padding: 1.3rem;
+      padding-bottom: 0;
+      background-color: white;
+      border-radius: 34px;
+      .gallery-house-location {
+        display: flex;
+        .gallery-icon-loc {
+          color: #019cde;
+          font-size: 2.5rem;
+        }
+        .gallery-house-address {
+          margin-left: 0.7rem;
+          display: flex;
+          flex-direction: column;
+          font-weight: 700;
+        }
+      }
+
+      .gallery-house-button-cont {
+        text-align: right;
+        position: absolute;
+
+        bottom: 0;
+        right: 0;
+        .gallery-house-button {
+          border: 5px solid #8edafbfa !important;
+          border-bottom: 0 !important;
+          border-right: 0 !important;
+          // box-shadow: -6px -5px 0px 0px rgba(34, 60, 80, 0.4);
+          border-radius: 34px 0px;
+          background: rgba(1, 156, 222, 1);
+          padding: 0.7rem 1.5rem;
+        }
+      }
+    }
+    .gallery-contact {
+      position: absolute;
+      bottom: 0;
+      margin: 0 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .gallery-avatar {
+        width: 75px;
+        height: 75px;
+        background-size: cover !important;
+        border-radius: 50%;
+        margin-bottom: 0.5rem;
+      }
+      h3 {
+        font-size: 1.4rem;
+      }
+      p {
+        font-size: 0.8rem;
+        color: #8f8f8f;
+        margin-bottom: 0.7rem;
+      }
+      .gallery-tel {
+        display: flex;
+        align-items: center;
+        img {
+          margin-right: 0.6rem;
+          width: 20px;
+          height: auto;
+        }
+        font-weight: 700;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1440px) {
+  .gallery-house {
+    grid-template-columns: 3fr 1fr; //
+
+    .gallery-house-right {
+      position: relative;
+      .gallery-house-overlay {
+        h2 {
+          font-size: 1.3rem; //
+          margin-bottom: 0.5rem; //
+        }
+        position: absolute;
+        width: 320px; //
+
+        height: 180px; //
+
+        .gallery-house-location {
+          .gallery-icon-loc {
+            font-size: 2rem; //
+          }
+          .gallery-house-address {
+            span {
+              font-size: 0.9rem; //
+            }
+          }
+        }
+      }
+      .gallery-contact {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .gallery-house {
+    grid-template-columns: 3fr 1fr; //
+
+    .gallery-house-right {
+      position: relative;
+      .gallery-house-overlay {
+        h2 {
+          font-size: 1.1rem; //
+          margin-bottom: 0.5rem; //
+        }
+        position: absolute;
+        width: 300px; //
+        right: -20px;
+        top: 20px;
+        height: 150px; //
+
+        .gallery-house-location {
+          .gallery-icon-loc {
+            font-size: 1.8rem; //
+          }
+          .gallery-house-address {
+            span {
+              font-size: 0.8rem; //
+            }
+          }
+        }
+      }
+      .gallery-contact {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .gallery-house {
+    grid-template-columns: 1fr; //
+  .gallery-house-img {
+    width: 100%;
+  
+    border-radius: 18px;
+  }
+    .gallery-house-right {
+      position: relative;
+      .gallery-house-overlay {
+        h2 {
+          font-size: 1.5rem; //
+          margin-bottom: 0.5rem; //
+        }
+      margin-bottom: 1rem;
+        .gallery-house-button-cont {
+          text-align: right;
+          position: absolute;
+          width: 170px;
+         
+          bottom: -0.5rem;
+          right: 1rem;
+          .gallery-house-button {
+            width: 100%;
+            border: 5px solid #8edafbfa !important;
+            border-bottom: 0 !important;
+            border-right: 0 !important;
+            // box-shadow: -6px -5px 0px 0px rgba(34, 60, 80, 0.4);
+            border-radius: 18px 0px;
+            background: rgba(1, 156, 222, 1);
+            padding: 0.5rem 1.6rem;
+          }
+        }
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%; //
+        right: -20px;
+        top: 20px;
+        height: 150px; //
+        border: none;
+        .gallery-house-location {
+          
+          .gallery-icon-loc {
+            font-size: 1.8rem; //
+          }
+          .gallery-house-address {
+            span {
+              font-size: 0.8rem; //
+            }
+          }
+        }
+      }
+      .gallery-contact {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 545px) {
+.gallery-house {
+    grid-template-columns: 1fr; //
+  .gallery-house-img {
+    width: 100%;
+  
+    border-radius: 18px;
+  }
+    .gallery-house-right {
+      position: relative;
+      .gallery-house-overlay {
+        h2 {
+          font-size: 1.5rem; //
+          margin-bottom: 0.5rem; //
+        }
+      margin-bottom: 1rem;
+        .gallery-house-button-cont {
+          text-align: right;
+          position: absolute;
+          width: 170px;
+         
+          bottom: 0;
+          right: 1rem;
+          .gallery-house-button {
+            width: 100%;
+            border: 5px solid #8edafbfa !important;
+            border-bottom: 0 !important;
+            border-right: 0 !important;
+            // box-shadow: -6px -5px 0px 0px rgba(34, 60, 80, 0.4);
+            border-radius: 18px 0px;
+            background: rgba(1, 156, 222, 1);
+            padding: 0.5rem 1.6rem;
+          }
+        }
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        width: 100%; //
+        right: -20px;
+        padding-top: 0.5rem;
+        top: 20px;
+        height: 150px; //
+        border: none;
+        .gallery-house-location {
+          
+          .gallery-icon-loc {
+            font-size: 1.8rem; //
+          }
+          .gallery-house-address {
+            span {
+              font-size: 0.7rem; //
+            }
+          }
+        }
+      }
+      .gallery-contact {
+        display: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 375px) {
+.gallery-house {
+    grid-template-columns: 1fr; //
+  .gallery-house-img {
+    width: 100%;
+  
+    border-radius: 18px;
+  }
+    .gallery-house-right {
+      position: relative;
+      .gallery-house-overlay {
+        h2 {
+          font-size: 1.3rem; //
+          margin-bottom: 0.5rem; //
+        }
+      margin-bottom: 1rem;
+        .gallery-house-button-cont {
+          text-align: right;
+          position: absolute;
+          width: 170px;
+         
+          bottom: 0;
+          right: 1rem;
+          .gallery-house-button {
+            width: 100%;
+            border: 5px solid #8edafbfa !important;
+            border-bottom: 0 !important;
+            border-right: 0 !important;
+            // box-shadow: -6px -5px 0px 0px rgba(34, 60, 80, 0.4);
+            border-radius: 18px 0px;
+            background: rgba(1, 156, 222, 1);
+            padding: 0.5rem 1.6rem;
+          }
+        }
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 0;
+        position: relative;
+        width: 100%; //
+        right: -20px;
+        padding-top: 0.5rem;
+
+        top: 20px;
+        height: 130px; //
+        border: none;
+        .gallery-house-location {
+          
+          .gallery-icon-loc {
+            font-size: 1.8rem; //
+          }
+          .gallery-house-address {
+            span {
+              font-size: 0.6rem; //
+            }
+          }
+        }
+      }
+      .gallery-contact {
+        display: none;
+      }
+    }
+  }
+}

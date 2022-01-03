@@ -3,8 +3,10 @@ import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
+import CheckIcon from '@mui/icons-material/Check';
 import Select from '@mui/material/Select';
 import './filter-select.styles.scss';
+
 export default function BasicSelect({ name, caterories, title }) {
   const [age, setAge] = React.useState('');
 
@@ -37,7 +39,12 @@ export default function BasicSelect({ name, caterories, title }) {
             onChange={handleChange}
           >
             {caterories.map((text, i) => (
-              <MenuItem value={i * 10}>{text}</MenuItem>
+              
+                <MenuItem className="demo-simple-select-options" value={i * 10}>
+                  <CheckIcon className="demo-simple-select-icon"></CheckIcon>
+                  {text}
+                </MenuItem>
+              
             ))}
           </Select>
         </FormControl>
