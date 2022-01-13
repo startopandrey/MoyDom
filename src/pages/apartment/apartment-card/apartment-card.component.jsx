@@ -4,6 +4,7 @@ import { IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
 import CallIcon from '@mui/icons-material/Call';
 import './apartment-card.styles.scss';
+import { Carousel } from 'react-responsive-carousel';
 const ApartmentCard = ({
   title,
   time,
@@ -18,10 +19,51 @@ const ApartmentCard = ({
 }) => {
   return (
     <div className="apartment-card">
-      <div
-        className="apartment-card-img"
-        style={{ background: `url("${img}") no-repeat` }}
-      ></div>
+      <div className="apartment-carousel-container">
+        <Carousel
+          renderIndicator={() => false}
+          renderThumbs={() => false}
+          className="apartment-carousel"
+          renderArrowNext={(onClickHandler, hasNext = true, label = 'le') =>
+            hasNext && (
+              <button
+                className="arrow-right arrow"
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+              >
+                &#8250;
+              </button>
+            )
+          }
+          renderArrowPrev={(onClickHandler, hasPrev = true, label = 'l') =>
+            hasPrev && (
+              <button
+                className="arrow-left arrow"
+                type="button"
+                onClick={onClickHandler}
+                title={label}
+              >
+                &#8249;
+              </button>
+            )
+          }
+        >
+          <div
+            className="apartment-card-img"
+            style={{ background: `url("${img}") no-repeat` }}
+          ></div>
+
+          <div
+            className="apartment-card-img"
+            style={{ background: `url("${img}") no-repeat` }}
+          ></div>
+          <div
+            className="apartment-card-img"
+            style={{ background: `url("${img}") no-repeat` }}
+          ></div>
+        </Carousel>
+      </div>
       <div className="apartment-card-data">
         <div className="apartment-card-about">
           <h3 className="apartment-card-title">{title}</h3>

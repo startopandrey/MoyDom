@@ -1,0 +1,227 @@
+.profile-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 1.5rem;
+  .profile-card-checkbox-slider {
+    display: flex;
+    .profile-card-checkbox-container {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+      .profile-card-checkbox {
+        width: 40px;
+
+        height: 40px;
+      }
+    }
+  }
+  .profile-card-data {
+    display: flex;
+    flex-direction: column;
+    .profile-card-error {
+      margin: 1rem 0;
+      color: #f35e5e;
+      font-family: 'Comfortaa', cursive;
+    }
+    .profile-card-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      margin-bottom: 0.7rem;
+    }
+    .profile-card-date {
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 0.7rem;
+    }
+    .profile-card-address {
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+  .profile-card-categories {
+    margin: 3rem 0;
+    align-items: center;
+    display: flex;
+    .profile-card-categories-icon {
+      font-size: 3rem;
+      margin-right: 2rem;
+    }
+    .profile-card-categories-data {
+      height: 80%;
+      margin: 3rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h3 {
+        a {
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile-card {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    column-gap: 1.5rem;
+    .profile-card-checkbox-slider {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+      .profile-card-checkbox-container {
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        .profile-card-checkbox {
+          width: 50px;
+
+          height: 50px;
+        }
+      }
+    }
+    .profile-card-data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      flex-direction: column;
+    .profile-card-error {
+      font-size: 0.8rem;
+    }
+      .profile-card-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        margin-bottom: 0.7rem;
+      }
+      .profile-card-date {
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 0.7rem;
+      }
+      .profile-card-address {
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+    .profile-card-categories {
+      position: relative;
+      margin: 3rem 0;
+      margin-bottom: 1rem !important;
+      align-items: center;
+      height: auto;
+      display: flex;
+      .profile-card-categories-icon {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        font-size: 3rem;
+        margin-right: 2rem;
+      }
+      .profile-card-categories-data {
+        height: 100%;
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 0.3rem;
+        justify-content: center;
+        h3 {
+          &:hover {
+            background-color: #019cde;
+            color: white;
+          }
+          border-radius: 5px;
+          height: 35px;
+          border: 1px solid #019cde;
+          padding: 0.3rem 1.5rem;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 545px) {
+  .profile-card {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    column-gap: 1.5rem;
+    .profile-card-checkbox-slider {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
+      .profile-card-checkbox-container {
+        display: flex;
+        align-items: center;
+        margin-right: 1rem;
+        .profile-card-checkbox {
+          width: 40px;
+
+          height: 40px;
+        }
+      }
+    }
+    .profile-card-data {
+      display: flex;
+
+      align-items: flex-start;
+      flex-direction: column;
+       .profile-card-error {
+      font-size: 0.8rem;
+    }
+      .profile-card-title {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        margin-bottom: 0.7rem;
+      }
+      .profile-card-date {
+        font-size: 0.7rem;
+        font-family: 'Montserrat', sans-serif;
+        margin-bottom: 0.7rem;
+      }
+      .profile-card-address {
+        font-size: 0.8rem;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+    .profile-card-categories {
+      position: relative;
+      
+      align-items: center;
+      height: auto;
+      display: flex;
+      .profile-card-categories-error{
+        display: flex;
+      }
+      .profile-card-categories-icon {
+        font-size: 3rem;
+        margin-right: 2rem;
+      }
+      .profile-card-categories-data {
+        width: 90%;
+        height: 100%;
+        margin: 1rem 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 0.3rem;
+        justify-content: center;
+        h3 {
+          &:hover {
+            background-color: #019cde;
+            color: white;
+          }
+          border-radius: 5px;
+          height: 30px;
+          border: 1px solid #019cde;
+          padding: 0.3rem 1.5rem;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.8rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

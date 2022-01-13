@@ -4,9 +4,10 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
 import './header-filter.styles.scss';
-
+import FilterRent from './filter-rent/filter-rent.component';
 import { blue } from '@mui/material/colors';
 import FilterSale from './filter-sale/filter-sale.component';
+import FilterBuild from './filter-newbuild/filter-newbuild.component';
 const FILTERPROPS = [
   {
     buy: {
@@ -49,7 +50,7 @@ const VariantButtonGroup = function () {
     },
   }));
   const [active, setActive] = useState('2');
-  
+
   return (
     <div className="header-filter">
       <Box
@@ -93,15 +94,15 @@ const VariantButtonGroup = function () {
       </Box>
       <div className="filter-container">
         {active === '1' && (
-          <FilterSale typehouse={true} key={1} >
+          <FilterSale typehouse={true} key={1}>
             {' '}
           </FilterSale>
         )}
-        {active === '2' && <FilterSale key={2}> </FilterSale>}
+        {active === '2' && <FilterRent key={2}> </FilterRent>}
         {active === '3' && (
-          <FilterSale rooms={true} region={false} key={3}>
+          <FilterBuild rooms={true} region={false} key={3}>
             {' '}
-          </FilterSale>
+          </FilterBuild>
         )}
       </div>
     </div>

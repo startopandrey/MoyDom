@@ -13,13 +13,14 @@ import HomeMap from '../../assets/home-map.png';
 import HomeGeo from '../../assets/home-geo.png';
 import HomeFile from '../../assets/home-file.png';
 import HomeNewImg from '../../assets/newbuildings.png';
-import HomeNewFullImg from '../../assets/novostrojki ful.png';
+import HomeNewFullImg from '../../assets/novostrojki-aricle.png';
 import HomeArticleFlat from '../../assets/novostrojki.png';
 import HomeArticleIconHouse from '../../assets/home-house.png';
 import HomeArticleIconTs from '../../assets/home-ts.png';
 import HomeArticleIconAuto from '../../assets/home-auto.png';
 import HomeNewBuild from '../../components/home-components/home-newbuildings/home-newbuildings.component';
 
+import { Link } from 'react-router-dom';
 const CARDS = [
   {
     img: HomeCategories1,
@@ -175,7 +176,7 @@ const Home = () => (
       <div className="home-articles-data">
         <div className="home-articles-house">
           <div
-            className="home-articles-left"
+            className="home-articles-left mobile-hidden"
             style={{ background: `url("${HomeArticleFlat}")` }}
           >
             <h3>Купить квартиру</h3>
@@ -194,7 +195,7 @@ const Home = () => (
         </div>
         <div className="home-articles-cards">
           <div
-            className="home-articles-card"
+            className="home-articles-card mobile-height"
             style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
           >
             <h3>Купить комнату</h3>
@@ -232,9 +233,25 @@ const Home = () => (
             <h3>Купить участок</h3>
             <span>966 предложений</span>
           </div>
+          <div
+            className="home-articles-card "
+            style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
+          >
+            <h3>Купить комнату</h3>
+            <span>966 предложений</span>
+          </div>
+          <div
+            className="home-articles-card mobile-height"
+            style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
+          >
+            <h3>Купить комнату</h3>
+            <span>966 предложений</span>
+          </div>
         </div>
         <div className="mobile-add home-articles-button">
-          <Button variant="contained">Больше статей</Button>
+          <Link to="/blog/acticle">
+            <Button variant="contained">Больше статей</Button>
+          </Link>
         </div>
       </div>
     </div>

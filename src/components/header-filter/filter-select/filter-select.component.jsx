@@ -9,7 +9,7 @@ import './filter-select.styles.scss';
 
 export default function BasicSelect({ name, caterories, title }) {
   const [age, setAge] = React.useState('');
-
+  console.log(age);
   const handleChange = event => {
     setAge(event.target.value);
   };
@@ -20,13 +20,8 @@ export default function BasicSelect({ name, caterories, title }) {
       <Box sx={{ minWidth: 120 }}>
         <FormControl className="filter-form">
           <InputLabel
-            // style={{
-            //   position: 'absolute',
-            //   top: '-0.3rem',
-            //   color: 'wheat',
-            // }}
-            className="demo-simple-select-text"
-            id="demo-simple-select-label"
+            id="demo-simple-select-helper-label"
+            className="demo-simple-select-helper-label"
           >
             {name}
           </InputLabel>
@@ -39,12 +34,10 @@ export default function BasicSelect({ name, caterories, title }) {
             onChange={handleChange}
           >
             {caterories.map((text, i) => (
-              
-                <MenuItem className="demo-simple-select-options" value={i * 10}>
-                  <CheckIcon className="demo-simple-select-icon"></CheckIcon>
-                  {text}
-                </MenuItem>
-              
+              <MenuItem className="demo-simple-select-options" value={i * 10}>
+                <CheckIcon className="demo-simple-select-icon"></CheckIcon>
+                {text}
+              </MenuItem>
             ))}
           </Select>
         </FormControl>

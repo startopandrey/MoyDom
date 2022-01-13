@@ -1,19 +1,28 @@
+
 .filter-price-title {
   font-family: 'Arsenal', sans-serif;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   margin-bottom: 0.5rem;
 }
-
+.subtitle {
+  position: absolute;
+  top: -8px;
+  color: #6a6a6a;
+  left: 45px;
+  font-size: 0.5rem;
+}
 .filter-price {
+  position: relative;
   .filter-price-container {
     display: flex;
     align-items: center;
-
+    height: 30px;
     .filter-price-input {
+      font-size: 0.7rem;
       ::placeholder {
         border: none !important;
-        font-size: 0.9rem;
+        font-size: 0.7 rem;
         font-family: 'Roboto', sans-serif;
         font-weight: 500;
         width: 100%;
@@ -32,36 +41,35 @@
 }
 @media screen and (max-width: 1024px) {
   .filter-price {
-  .filter-price-container {
-    display: flex;
-    align-items: center;
+    .filter-price-container {
+      display: flex;
+      align-items: center;
 
-    .filter-price-input {
-      ::placeholder {
-        border: none !important;
-        font-size: 0.7rem;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        width: 100%;
-      }
-      &::before {
-        border: none;
+      .filter-price-input {
+        ::placeholder {
+          border: none !important;
+          font-size: 0.7rem;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+          width: 100%;
+        }
+        &::before {
+          border: none;
+        }
       }
     }
   }
-}
 
   .filter-price-title {
     display: flex;
     align-items: center;
-  font-family: 'Arsenal', sans-serif;
-  font-weight: 700;
-  font-size: 0.7rem;
-  margin-bottom: 0.5rem;
-}
+    font-family: 'Arsenal', sans-serif;
+    font-weight: 700;
+
+    margin-bottom: 0.5rem;
+  }
   .filter-price {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
 }
-

@@ -1,0 +1,95 @@
+.about-us {
+  display: flex;
+  column-gap: 2rem;
+  .about-us-img {
+    align-self: center;
+    width: auto;
+    margin-bottom: 5rem;
+    height: 320px;
+  }
+  .about-us-data {
+    color: #818181;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    .about-us-title {
+      font-size: 1.5rem;
+      color: #0aa0e0;
+      font-family: 'Montserrat', sans-serif !important;
+      margin-bottom: 2rem;
+    }
+    .about-us-item {
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif !important;
+      margin-bottom: 1rem;
+      li {
+        font-family: 'Montserrat', sans-serif !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+    .about-us {
+  display: flex;
+  flex-direction: column;
+  column-gap: 2rem;
+  .about-us-img {
+    align-self: center;
+    width: auto;
+    margin: 4rem 0  0rem 0;
+    height: 320px;
+  }
+  .about-us-data {
+    color: #818181;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    .about-us-title {
+      font-size: 1.5rem;
+      color: #0aa0e0;
+      font-family: 'Montserrat', sans-serif !important;
+      margin-bottom: 2rem;
+    }
+    .about-us-item {
+      font-size: 1rem;
+      font-family: 'Montserrat', sans-serif !important;
+      margin-bottom: 1rem;
+      line-height: 130%;
+      li {
+        font-family: 'Montserrat', sans-serif !important;
+      }
+    }
+  }
+}
+}
+@media screen and (max-width: 545px) {
+    .about-us {
+  display: flex;
+  flex-direction: column;
+  column-gap: 2rem;
+  .about-us-img {
+    align-self: center;
+    width: auto;
+    margin: 4rem 0  0rem 0;
+    height: 240px;
+  }
+  .about-us-data {
+    color: #818181;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    .about-us-title {
+      font-size: 1.3rem;
+      color: #0aa0e0;
+      font-family: 'Montserrat', sans-serif !important;
+      margin-bottom: 2rem;
+    }
+    .about-us-item {
+      font-size: 0.8rem;
+      font-family: 'Montserrat', sans-serif !important;
+      margin-bottom: 1rem;
+      line-height: 130%;
+      li {
+        font-family: 'Montserrat', sans-serif !important;
+      }
+    }
+  }
+}
+}

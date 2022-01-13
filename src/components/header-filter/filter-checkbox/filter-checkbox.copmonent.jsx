@@ -18,7 +18,7 @@ const MenuProps = {
   },
 };
 
-export default function MultipleSelectCheckmarks({ categories, title }) {
+export default function MultipleSelectCheckmarks({ categories, title,name }) {
   const [personName, setPersonName] = React.useState([]);
 
   const handleChange = event => {
@@ -36,9 +36,11 @@ export default function MultipleSelectCheckmarks({ categories, title }) {
       <h3 className="filter-sale-title">{title}</h3>
       <FormControl className="filter-form" sx={{ width: '100%' }}>
         <InputLabel
-          className="demo-simple-select-text"
-          id="demo-multiple-checkbox-label"
-        ></InputLabel>
+          id="demo-simple-select-helper-label"
+          className="demo-simple-select-helper-label"
+        >
+          {name}
+        </InputLabel>
         <Select
           labelId="demo-multiple-checkbox-label"
           className="demo-simple-select-label demo-simple-checkbox-label"
@@ -56,17 +58,15 @@ export default function MultipleSelectCheckmarks({ categories, title }) {
               key={name}
               value={name}
             >
-             
-                <Checkbox
-                  size="small"
-                  className="demo-simple-select-checkbox"
-                  checked={personName.indexOf(name) > -1}
-                />
-                <ListItemText
-                  className="demo-simple-select-text"
-                  primary={name}
-                />
-            
+              <Checkbox
+                size="small"
+                className="demo-simple-select-checkbox"
+                checked={personName.indexOf(name) > -1}
+              />
+              <ListItemText
+                className="demo-simple-select-text"
+                primary={name}
+              />
             </MenuItem>
           ))}
         </Select>

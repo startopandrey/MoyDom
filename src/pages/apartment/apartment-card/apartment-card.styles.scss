@@ -3,8 +3,34 @@
   grid-template-columns: 1fr 3fr;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
-  .apartment-card-img {
+  .apartment-carousel-container {
+    position: relative;
     width: 100%;
+    .apartment-carousel {
+      .arrow-left {
+        left: 5% !important;
+      }
+      .arrow-right {
+        right: 15% !important;
+      }
+      .arrow {
+        cursor: pointer;
+        z-index: 2;
+        position: absolute !important;
+        font-size: 4rem;
+        background-color: transparent;
+        color: #2c74a8;
+        top: 35%;
+      }
+      max-width: 280px;
+      .carousel-status,
+      .control-arrow {
+        display: none !important;
+      }
+    }
+  }
+  .apartment-card-img {
+    width: 250px;
     height: 280px;
     background-position: bottom !important;
     border-radius: 13px;
@@ -94,7 +120,32 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
+     .apartment-carousel-container {
+    position: relative;
+    width: 100%;
+    .apartment-carousel {
+      .arrow-left {
+        left: 5% !important;
+      }
+      .arrow-right {
+        right: 5% !important;
+      }
+      .arrow {
+        z-index: 2;
+        position: absolute !important;
+        font-size: 4rem;
+        background-color: transparent;
+        color: #2c74a8;
+        top: 35%;
+      }
+      max-width: 280px;
+      .carousel-status,
+      .control-arrow {
+        display: none !important;
+      }
+    }
+  }
     .apartment-card-img {
       width: 280px !important;
       height: 300px;
@@ -253,16 +304,16 @@
           align-self: flex-end;
           height: 40px;
           justify-self: start;
- .apartment-card-price-buttons {
-          display: flex;
-     margin-top: 0.5rem;
-          .apartment-card-price-buttons-icon {
-            background-color: #019cde;
-            color: white;
-      
-            margin-left: 0.5rem;
+          .apartment-card-price-buttons {
+            display: flex;
+            margin-top: 0.5rem;
+            .apartment-card-price-buttons-icon {
+              background-color: #019cde;
+              color: white;
+
+              margin-left: 0.5rem;
+            }
           }
-        }
           h2 {
             color: #2c74a8;
             font-weight: 400;
@@ -273,7 +324,7 @@
             border-radius: 6px;
             font-size: 0.8rem;
             width: 150px;
-margin: 0;
+            margin: 0;
             box-shadow: none;
           }
         }
@@ -354,7 +405,7 @@ margin: 0;
         }
         .apartment-card-price {
           width: 100%;
-       
+
           height: 30px;
           justify-self: start;
           justify-content: space-between;
@@ -368,7 +419,6 @@ margin: 0;
             border-radius: 6px;
             font-size: 0.8rem;
             width: 120px;
-          
           }
         }
       }

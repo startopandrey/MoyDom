@@ -1,0 +1,617 @@
+.profile {
+  .profile-container {
+    margin-bottom: 7rem;
+    .profile-buttons {
+      margin-bottom: 2rem;
+      .active-button {
+        background-color: #019cde !important;
+      }
+      .profile-button {
+        padding: 0.3rem 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        text-transform: capitalize;
+        margin-right: 2rem;
+        border: 1px #019cde solid !important;
+      }
+    }
+    .profile-statuses {
+      margin-bottom: 2rem;
+      .active-status-button {
+        border-bottom: 1px solid black !important;
+      }
+      .profile-status-button {
+        color: black;
+        font-weight: 600;
+        height: 16px !important;
+        border-radius: 0;
+        text-transform: capitalize;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        padding-bottom: 0px;
+        margin-right: 1rem;
+      }
+    }
+    .profile-cards-container {
+      .profile-card-container {
+        margin-bottom: 2rem;
+      }
+    }
+    .profile-settings {
+      display: flex;
+      width: 80%;
+      align-items: center;
+      justify-content: space-between;
+      .profile-settings-data {
+        .profile-settings-contact-name {
+          width: 300px !important;
+          h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 0.8rem;
+          }
+          .profile-settings-contact-textfield {
+            width: 100%;
+            input {
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 500;
+            }
+          }
+          .profile-settings-button-container {
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: flex-end;
+            .profile-settings-contact-button {
+              margin-right: 2rem;
+              font-family: 'Montserrat', sans-serif;
+              text-transform: capitalize;
+              color: black;
+            }
+          }
+        }
+      }
+      .profile-settings-buttons {
+        .profile-settings-button-item {
+          .active-settings-button {
+            background-color: #019cde !important;
+          }
+          .profile-settings-button {
+            margin-bottom: 1rem;
+            width: 250px;
+            padding: 0.3rem 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            text-transform: capitalize;
+            margin-right: 2rem;
+            border: 1px #019cde solid !important;
+          }
+        }
+      }
+    }
+    .profile-settings-photo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .profile-settings-photo-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          font-family: 'Montserrat', sans-serif;
+          margin-bottom: 1rem;
+        }
+        span {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.8rem;
+          text-align: center;
+          margin-top: 1rem;
+          width: 50%;
+        }
+        .profile-settings-photo-rec {
+          width: 150px;
+          height: 150px;
+          border: 1px solid black;
+          border-radius: 20px;
+        }
+      }
+      .profile-settings-photo-text {
+        width: 30%;
+        p {
+          text-align: center;
+          line-height: 140%;
+
+          font-family: 'Montserrat', sans-serif;
+        }
+      }
+    }
+    .profile-delete{
+        .profile-delete-button-container{
+            .profile-delete-button{
+                border: 1px solid black !important;
+                color: black;
+                width: 180px;
+                  font-family: 'Montserrat', sans-serif;
+                  text-transform: capitalize;
+            }
+        }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+.profile {
+  .profile-container {
+    margin-bottom: 7rem;
+    .profile-buttons {
+      margin-bottom: 2rem;
+      .active-button {
+        background-color: #019cde !important;
+      }
+      .profile-button {
+        padding: 0.3rem 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        text-transform: capitalize;
+        margin-right: 2rem;
+        border: 1px #019cde solid !important;
+      }
+    }
+    .profile-statuses {
+      margin-bottom: 2rem;
+      .active-status-button {
+        border-bottom: 1px solid black !important;
+      }
+      .profile-status-button {
+        color: black;
+        font-weight: 600;
+        height: 16px !important;
+        border-radius: 0;
+        text-transform: capitalize;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        padding-bottom: 0px;
+        margin-right: 1rem;
+      }
+    }
+    .profile-cards-container {
+      .profile-card-container {
+        margin-bottom: 2rem;
+      }
+    }
+    .profile-settings {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      .profile-settings-data {
+        .profile-settings-contact-name {
+          width: 300px !important;
+          h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 0.8rem;
+          }
+          .profile-settings-contact-textfield {
+            width: 100%;
+            input {
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 500;
+            }
+          }
+          .profile-settings-button-container {
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: flex-end;
+            .profile-settings-contact-button {
+              margin-right: 2rem;
+              font-family: 'Montserrat', sans-serif;
+              text-transform: capitalize;
+              color: black;
+            }
+          }
+        }
+      }
+      .profile-settings-buttons {
+        .profile-settings-button-item {
+          .active-settings-button {
+            background-color: #019cde !important;
+          }
+          .profile-settings-button {
+            margin-bottom: 1rem;
+            width: 250px;
+            padding: 0.3rem 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            text-transform: capitalize;
+            margin-right: 2rem;
+            border: 1px #019cde solid !important;
+          }
+        }
+      }
+    }
+    .profile-settings-photo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .profile-settings-photo-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          font-family: 'Montserrat', sans-serif;
+          margin-bottom: 1rem;
+        }
+        span {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.8rem;
+          text-align: center;
+          margin-top: 1rem;
+          width: 50%;
+        }
+        .profile-settings-photo-rec {
+          width: 150px;
+          height: 150px;
+          border: 1px solid black;
+          border-radius: 20px;
+        }
+      }
+      .profile-settings-photo-text {
+        width: 30%;
+        p {
+          text-align: center;
+          line-height: 140%;
+
+          font-family: 'Montserrat', sans-serif;
+        }
+      }
+    }
+    .profile-delete{
+        .profile-delete-button-container{
+            .profile-delete-button{
+                border: 1px solid black !important;
+                color: black;
+                width: 180px;
+                  font-family: 'Montserrat', sans-serif;
+                  text-transform: capitalize;
+            }
+        }
+    }
+  }
+}
+}
+@media screen and (max-width: 768px) {
+.profile {
+  .profile-container {
+    margin-bottom: 7rem;
+    .profile-buttons {
+        display: flex;
+        justify-content: center;
+      margin-bottom: 2rem;
+      .active-button {
+        background-color: #019cde !important;
+      }
+      .profile-button {
+        padding: 0.3rem 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        text-transform: capitalize;
+        margin-right: 2rem;
+        border: 1px #019cde solid !important;
+      }
+    }
+    .profile-statuses {
+      margin-bottom: 2rem;
+      .active-status-button {
+        border-bottom: 1px solid black !important;
+      }
+      .profile-status-button {
+        color: black;
+        font-weight: 600;
+        height: 16px !important;
+        border-radius: 0;
+        text-transform: capitalize;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        padding-bottom: 0px;
+        margin-right: 1rem;
+      }
+    }
+    .profile-cards-container {
+      .profile-card-container {
+        margin-bottom: 2rem;
+      }
+    }
+    .profile-settings {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      .profile-settings-data {
+          margin-top: 2rem;
+        .profile-settings-contact-name {
+          width: 300px !important;
+          h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 0.8rem;
+          }
+          .profile-settings-contact-textfield {
+            width: 100%;
+            input {
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 500;
+            }
+          }
+          .profile-settings-button-container {
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: flex-end;
+            .profile-settings-contact-button {
+              margin-right: 2rem;
+              font-family: 'Montserrat', sans-serif;
+              text-transform: capitalize;
+              color: black;
+            }
+          }
+        }
+      }
+      .profile-settings-buttons {
+        .profile-settings-button-item {
+          .active-settings-button {
+            background-color: #019cde !important;
+          }
+          .profile-settings-button {
+            margin-bottom: 1rem;
+            width: 250px;
+            padding: 0.3rem 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            text-transform: capitalize;
+            margin-right: 2rem;
+            border: 1px #019cde solid !important;
+          }
+        }
+      }
+    }
+    .profile-settings-photo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .profile-settings-photo-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          font-family: 'Montserrat', sans-serif;
+          margin-bottom: 1rem;
+        }
+        span {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.8rem;
+          text-align: center;
+          margin-top: 1rem;
+          width: 50%;
+        }
+        .profile-settings-photo-rec {
+          width: 150px;
+          height: 150px;
+          border: 1px solid black;
+          border-radius: 20px;
+        }
+      }
+      .profile-settings-photo-text {
+        width: 30%;
+        p {
+          text-align: center;
+          line-height: 140%;
+
+          font-family: 'Montserrat', sans-serif;
+        }
+      }
+    }
+    .profile-delete{
+        .profile-delete-button-container{
+            .profile-delete-button{
+                border: 1px solid black !important;
+                color: black;
+                width: 180px;
+                  font-family: 'Montserrat', sans-serif;
+                  text-transform: capitalize;
+            }
+        }
+    }
+  }
+}
+}
+@media screen and (max-width: 545px) {
+  .profile {
+    .profile-container {
+      margin-bottom: 7rem;
+      .profile-buttons {
+        display: flex;
+        margin-bottom: 2rem;
+        .active-button {
+          background-color: #019cde !important;
+        }
+        .profile-button {
+          padding: 0.3rem 1.5rem;
+          font-family: 'Montserrat', sans-serif;
+          font-size: 1rem;
+          text-transform: capitalize;
+          margin-right: 2rem;
+          border: 1px #019cde solid !important;
+        }
+      }
+      .profile-statuses {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        .active-status-button {
+          border-bottom: 1px solid black !important;
+        }
+        .profile-status-button {
+          width: fit-content;
+          margin-bottom: 0.1rem;
+          color: black;
+          font-weight: 600;
+          height: 16px !important;
+          border-radius: 0;
+          text-transform: capitalize;
+          font-family: 'Montserrat', sans-serif;
+          padding: 0;
+          padding-bottom: 0px;
+          margin-right: 1rem;
+        }
+      }
+      .profile-cards-container {
+        .profile-card-container {
+          margin-bottom: 2rem;
+        }
+      }
+      
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+.profile {
+  .profile-container {
+    margin-bottom: 7rem;
+    .profile-buttons {
+        display: flex;
+        justify-content: center;
+      margin-bottom: 2rem;
+      .active-button {
+        background-color: #019cde !important;
+      }
+      .profile-button {
+        padding: 0.3rem 1.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+        text-transform: capitalize;
+        margin-right: 2rem;
+        border: 1px #019cde solid !important;
+      }
+    }
+    .profile-statuses {
+      margin-bottom: 2rem;
+      .active-status-button {
+        border-bottom: 1px solid black !important;
+      }
+      .profile-status-button {
+        color: black;
+        font-weight: 600;
+        height: 16px !important;
+        border-radius: 0;
+        text-transform: capitalize;
+        font-family: 'Montserrat', sans-serif;
+        padding: 0;
+        padding-bottom: 0px;
+        margin-right: 1rem;
+      }
+    }
+    .profile-cards-container {
+      .profile-card-container {
+        margin-bottom: 2rem;
+      }
+    }
+    .profile-settings {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      .profile-settings-data {
+          margin-top: 2rem;
+        .profile-settings-contact-name {
+          width: 300px !important;
+          h3 {
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: 0.8rem;
+          }
+          .profile-settings-contact-textfield {
+            width: 100%;
+            input {
+              font-family: 'Montserrat', sans-serif;
+              font-weight: 500;
+            }
+          }
+          .profile-settings-button-container {
+            margin-top: 0.5rem;
+            display: flex;
+            justify-content: flex-end;
+            .profile-settings-contact-button {
+              margin-right: 2rem;
+              font-family: 'Montserrat', sans-serif;
+              text-transform: capitalize;
+              color: black;
+            }
+          }
+        }
+      }
+      .profile-settings-buttons {
+        .profile-settings-button-item {
+          .active-settings-button {
+            background-color: #019cde !important;
+          }
+          .profile-settings-button {
+            margin-bottom: 1rem;
+            width: 250px;
+            padding: 0.3rem 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            text-transform: capitalize;
+            margin-right: 2rem;
+            border: 1px #019cde solid !important;
+          }
+        }
+      }
+    }
+    .profile-settings-photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      .profile-settings-photo-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h3 {
+          font-family: 'Montserrat', sans-serif;
+          margin-bottom: 1rem;
+        }
+        span {
+           
+          font-family: 'Montserrat', sans-serif;
+          font-size: 0.8rem;
+          text-align: center;
+          margin-top: 1rem;
+          width: 50%;
+        }
+        .profile-settings-photo-rec {
+          width: 150px;
+          height: 150px;
+          border: 1px solid black;
+          border-radius: 20px;
+        }
+      }
+      .profile-settings-photo-text {
+        width: 100%;
+        p { margin-top: 1rem;
+          text-align: center;
+          line-height: 140%;
+
+          font-family: 'Montserrat', sans-serif;
+        }
+      }
+    }
+    .profile-delete{
+        .profile-delete-button-container{
+            .profile-delete-button{
+                border: 1px solid black !important;
+                color: black;
+                width: 180px;
+                  font-family: 'Montserrat', sans-serif;
+                  text-transform: capitalize;
+            }
+        }
+    }
+  }
+}
+}

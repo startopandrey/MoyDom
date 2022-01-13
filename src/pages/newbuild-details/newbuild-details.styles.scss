@@ -48,7 +48,7 @@
           border-bottom: none !important;
         }
         .date {
-          width: 50px;
+          width: 100%;
         }
         border-bottom: 1px black solid;
         ul {
@@ -122,9 +122,7 @@
           &:last-child {
             border-bottom: none !important;
           }
-          .date {
-            width: 50px;
-          }
+
           border-bottom: 1px black solid;
           ul {
             display: grid;
@@ -202,12 +200,10 @@
           .newbuild-details-package-item {
             padding-bottom: 1rem;
             &:last-child {
-              border-bottom: none !important;
+              border-bottom: #019cde 1px solid !important;
             }
-            .date {
-              width: 50px;
-            }
-            border-bottom: 1px black solid;
+
+            border-bottom: 1px none;
             ul {
               display: grid;
               grid-template-columns: repeat(5, 1fr);
@@ -216,14 +212,17 @@
               li {
                 font-size: 0.7rem;
                 span {
-                  font-size: 0.7rem;
+                  font-size: 0.6rem;
                 }
                 // padding: 0 0.7rem;
               }
             }
           }
           .newbuild-details-package-item {
-            padding-top: 1rem;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            border-radius: 10px;
+            border: #019cde 1px solid;
             ul {
             }
           }
@@ -295,19 +294,16 @@
             &:last-child {
               border-bottom: none !important;
             }
-            .date {
-              width: 50px;
-            }
-            border-bottom: 1px black solid;
+
             ul {
               display: grid;
               grid-template-columns: repeat(5, 1fr);
               align-items: center;
               column-gap: 0.6rem;
               li {
-                font-size: 0.7rem;
+                font-size: 0.8rem;
                 span {
-                  font-size: 0.7rem;
+                  font-size: 0.6rem;
                 }
                 // padding: 0 0.7rem;
               }
@@ -379,26 +375,25 @@
             li {
               font-weight: 700;
             }
+            border-bottom: none !important;
           }
           .newbuild-details-package-item-title,
           .newbuild-details-package-item {
             padding-bottom: 1rem;
             &:last-child {
-              border-bottom: none !important;
+              border-bottom: 1px #019cde solid ;
             }
-            .date {
-              width: 50px;
-            }
-            border-bottom: 1px black solid;
+
+            border-bottom: 1px #019cde solid;
             ul {
               display: grid;
               grid-template-columns: repeat(5, 1fr);
               align-items: center;
               column-gap: 0.6rem;
               li {
-                font-size: 0.6rem;
+                font-size: 0.7rem;
                 span {
-                  font-size: 0.7rem;
+                  font-size: 0.6rem;
                 }
                 // padding: 0 0.7rem;
               }
@@ -468,17 +463,17 @@
             li {
               font-weight: 700;
             }
+             
           }
           .newbuild-details-package-item-title,
           .newbuild-details-package-item {
             padding-bottom: 0.5rem;
-            &:last-child {
-              border-bottom: none !important;
-            }
+            
+ border-bottom: 1px #019cde solid ;
             .date {
               width: 50px;
             }
-            border-bottom: 1px black solid;
+            border-bottom: none;
             ul {
               display: grid;
               grid-template-columns: repeat(5, 1fr);
@@ -495,6 +490,11 @@
           }
           .newbuild-details-package-item {
             padding-top: 0.5rem;
+  
+              border-bottom: 1px #019cde solid ;
+            &:last-child {
+              border-bottom: 1px #019cde solid !important;
+            }
             ul {
               li {
                 font-size: 0.55rem;

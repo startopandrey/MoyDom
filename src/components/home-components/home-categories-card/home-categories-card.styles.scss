@@ -4,7 +4,11 @@
     height: 300px;
     border-radius: 10px;
     filter: brightness(0.6) contrast(0.8);
+    transition: all 0.2s ease-in-out;
     background-size: cover !important;
+    &:hover {
+      filter: none;
+    }
   }
   .home-categories-card-text {
     text-align: center;
@@ -38,8 +42,7 @@
     }
     .home-categories-card-text {
       font-size: 1.3rem;
-        margin: 0.5rem 0;
+      margin: 0.5rem 0;
     }
   }
 }
-

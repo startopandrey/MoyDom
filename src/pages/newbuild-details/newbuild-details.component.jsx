@@ -60,7 +60,12 @@ const NewBuildDetails = ({
             {info.map(el => (
               <li className="newbuild-details-package-item">
                 <ul>
-                  <li className="date">{el.date}</li>
+                  <li className="date">
+                    {' '}
+                    <h4>
+                      {el.date}
+                    </h4> <span>{`Корпус ${el.dateFrame}`}</span>{' '}
+                  </li>
                   <li>{el.floor}</li>
                   <li>{el.meters}</li>
                   <li>{el.package}</li>

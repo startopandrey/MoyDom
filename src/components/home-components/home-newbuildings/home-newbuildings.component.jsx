@@ -2,9 +2,11 @@ import React from 'react';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import LanguageIcon from '@mui/icons-material/Language';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import Favorite from '@mui/icons-material/Favorite';
+import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import './home-newbuildings.styles.scss';
 import { Link } from 'react-router-dom';
-import { Button } from '@mui/material';
+import { Button, Checkbox } from '@mui/material';
 const HomeNewBuild = ({
   title,
   address,
@@ -34,7 +36,13 @@ const HomeNewBuild = ({
             </span>
           </div>
           <img className="logo-company mobile-hidden" src={logo} alt="" />
-          <FavoriteBorderIcon className="home-address-heart"></FavoriteBorderIcon>
+          <Checkbox
+            className="home-address-heart"
+            icon={<FavoriteBorder sx={{ color: '#1976d2' }} fontSize="large" />}
+            checkedIcon={
+              <Favorite fontSize="large" sx={{ color: '#e30000' }} />
+            }
+          ></Checkbox>
         </div>
         <div className="home-about mobile-hidden">
           <div className="home-about-items">

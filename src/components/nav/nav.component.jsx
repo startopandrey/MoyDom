@@ -1,24 +1,35 @@
 import React, { Component } from 'react';
 import { MenuItems } from './nav-items';
-import Button from './nav-button/nav-button.component.jsx';
+
 import './nav.styles.scss';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import SignImg from '../../assets/modal/sign.png';
+import SignUpImg from '../../assets/modal/sign-up.png';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { Link } from 'react-router-dom';
 import DehazeIcon from '@mui/icons-material/Dehaze';
 import CloseIcon from '@mui/icons-material/Close';
-import { Facebook } from '@mui/icons-material';
+import { Facebook, LocalActivity } from '@mui/icons-material';
 import { Container } from '@mui/material';
 import { CardHeart } from '../card-heart/card-heart.component';
+import ModalPopup from '../modal/modal.component';
+
 class Navbar extends Component {
   state = {
     clicked: false,
+    open: false,
   };
   handleClick = () => {
     this.setState({ clicked: !this.state.clicked });
   };
+  handleOpen = () => this.setState({ open: true });
+  handleClose = () => this.setState({ open: false });
   render() {
     return (
       <div className="navbar-container">
@@ -75,13 +86,51 @@ class Navbar extends Component {
             </ul>
           </ul>
           <div className="navbar-user">
-            <CardHeart num={10}></CardHeart>
-            <div className="navbar-user-profile">
-              <h4 className="navbar-user-profile-text">Моя профиль</h4>
-              <AccountCircleOutlinedIcon
-                fontSize="medium"
-                className="navbar-user-profile-icon"
-              ></AccountCircleOutlinedIcon>
+            <div className="navbar-user-profile">  <Link to="map-filter">
+                    <LocalActivity></LocalActivity>
+                  </Link>
+              {false ? (
+                <>
+                  {' '}
+                
+                  <Link to="/favorites">
+                    <CardHeart num={10}></CardHeart>
+                  </Link>
+                  <h4 className="navbar-user-profile-text">Мой профиль</h4>
+                  <AccountCircleOutlinedIcon
+                    fontSize="medium"
+                    className="navbar-user-profile-icon"
+                  ></AccountCircleOutlinedIcon>
+                </>
+              ) : (
+                <div className="modal">
+                  <ModalPopup
+                    img={{ registration: SignImg, sign: SignUpImg }}
+                  ></ModalPopup>
+                </div>
+              )}
+
+              <ul
+                className={`${
+                  this.state.clickedNav == true && 'nav-active'
+                } navbar-user-profile-dropdown`}
+              >
+                <li className="navbar-user-profile-dropdown-item">
+                  <Link to="profile">Личный кабинет</Link>
+                </li>
+                <li className="navbar-user-profile-dropdown-item">
+                  <Link to="profile">Добавить объвление</Link>
+                </li>
+                <li className="navbar-user-profile-dropdown-item">
+                  <Link to="profile">Настройки</Link>
+                </li>
+                <li className="navbar-user-profile-dropdown-item">
+                  <Link to="/favorites">Избранное</Link>
+                </li>
+                <li className="navbar-user-profile-dropdown-item">
+                  <Link to="profile">Выйти</Link>
+                </li>
+              </ul>
             </div>
           </div>
           {/* <Button>Sign up</Button> */}

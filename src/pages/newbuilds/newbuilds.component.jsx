@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import GalleryHouse from '../../components/gallery-house/gallery-house.component';
-import GalleryPhoto from '../../assets/newbuild/newbuild-gallery.png';
+import GalleryPhoto1 from '../../assets/newbuild/newbuild-gallery1.png';
+import GalleryPhoto2 from '../../assets/newbuild/newbuild-gallery2.png';
+import GalleryPhoto3 from '../../assets/newbuild/newbuild-gallery3.png';
+import GalleryPhoto4 from '../../assets/newbuild/newbuild-gallery4.png';
 import Avatar from '../../assets/newbuild/newbuild-avatar.png';
 import './newbuilds.styles.scss';
 import HomeNewImg from '../../assets/newbuildings.png';
@@ -256,16 +259,10 @@ const Newbuild = () => {
           online="января 2022г"
           avatar={Avatar}
           name="Jamshid Kamolov"
-          img={GalleryPhoto}
+          img={[GalleryPhoto1, GalleryPhoto1, GalleryPhoto1, GalleryPhoto1]}
         ></GalleryHouse>
 
         <div className="container">
-          <div className="newbuild-description">
-            <NewbuildDesription
-              title="Описание"
-              text={DESCRIPTION}
-            ></NewbuildDesription>
-          </div>
           <div className="newbuild-rooms">
             <NewbuildRooms
               rooms="1"
@@ -273,7 +270,6 @@ const Newbuild = () => {
               place="52,99"
               planes="29"
               flats="26"
-         
             ></NewbuildRooms>
 
             <NewbuildRooms
@@ -297,6 +293,12 @@ const Newbuild = () => {
               planes="29"
               flats="26"
             ></NewbuildRooms>
+          </div>{' '}
+          <div className="newbuild-description">
+            <NewbuildDesription
+              title="Описание"
+              text={DESCRIPTION}
+            ></NewbuildDesription>
           </div>
           <div className="newbuild-feature">
             <h3 className="newbuild-title">Характеристики ЖК</h3>

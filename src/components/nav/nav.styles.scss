@@ -9,16 +9,46 @@
   font-size: 1rem;
   .navbar-user {
     display: flex;
+   
     .navbar-user-profile {
+      cursor: pointer;
+      position: relative;
       display: flex;
       margin-left: 1.5rem;
+      .navbar-user-sign {
+        background: #019cde;
+        text-transform: capitalize;
+        border-radius: 10px;
+      }
+      &:hover {
+        .navbar-user-profile-dropdown {
+          // display: block;
+          transition: all 0.3s ease-in-out;
+        }
+      }
       .navbar-user-profile-icon {
         color: white;
       }
       .navbar-user-profile-text {
+        margin-left: 1rem;
         color: white;
         white-space: nowrap;
         margin-right: 1rem;
+      }
+      .navbar-user-profile-dropdown {
+        display: none;
+        transition: all 0.3s ease-in-out;
+        position: absolute;
+        background-color: white;
+        top: 1.5rem;
+        border-radius: 5px;
+        li {
+          padding: 0.1rem;
+          a {
+            white-space: nowrap;
+            font-family: 'Arsenal';
+          }
+        }
       }
     }
   }
@@ -113,7 +143,6 @@
     position: fixed;
     padding-bottom: 13rem;
     background: rgba(#000000, 0.8);
-    
   }
   .nav-links {
     text-align: center;
@@ -141,7 +170,51 @@
   }
 }
 @media screen and (max-width: 426px) {
-  .navbar-user-profile-text {
-    display: none;
+  .navbar-items {
+    height: 80px;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center;
+    font-size: 1rem;
+    .navbar-user {
+      display: flex;
+      .navbar-user-profile {
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        margin-left: 1.5rem;
+        &:hover {
+          .navbar-user-profile-dropdown {
+            display: block;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+        .navbar-user-profile-icon {
+          color: white;
+        }
+        .navbar-user-profile-text {
+          color: white;
+          white-space: nowrap;
+          margin-right: 1rem;
+        }
+        .navbar-user-profile-dropdown {
+          z-index: 100;
+          display: none;
+          transition: all 0.3s ease-in-out;
+          position: absolute;
+          background-color: white;
+          top: 1.5rem;
+          right: 0;
+          border-radius: 5px;
+          li {
+            padding: 0.1rem;
+            a {
+              white-space: nowrap;
+              font-family: 'Arsenal';
+            }
+          }
+        }
+      }
+    }
   }
 }

@@ -1,0 +1,67 @@
+.profile-account {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #34aee1 0%, #019cde 100%);
+  border-radius: 20px;
+  padding: 0 1rem;
+  width: 100%;
+  height: 150px;
+  margin: 2rem 0;
+  .profile-account-avatar {
+    width: 90px;
+    height: 90px;
+  }
+  .profile-account-data {
+    margin-left: 1.5rem;
+    display: flex;
+
+    flex-direction: column;
+    color: white;
+    .profile-account-title {
+      margin-bottom: 0.2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+    }
+    .profile-account-time,
+    .profile-account-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      margin-bottom: 0.1rem;
+    }
+  }
+}
+@media screen and (max-width: 545px) {
+  .profile-account {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(180deg, #34aee1 0%, #019cde 100%);
+  border-radius: 20px;
+  padding: 0 1rem;
+  width: 100%;
+  height: 150px;
+  margin: 2rem 0;
+  .profile-account-avatar {
+    width: 90px;
+    height: 90px;
+  }
+  .profile-account-data {
+    margin-left: 1rem;
+    display: flex;
+
+    flex-direction: column;
+    color: white;
+    .profile-account-title {
+      margin-bottom: 0.3rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .profile-account-time,
+    .profile-account-num {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.65rem;
+      margin-bottom: 0.1rem;
+    }
+  }
+}
+}

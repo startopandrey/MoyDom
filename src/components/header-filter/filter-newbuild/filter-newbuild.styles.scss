@@ -1,0 +1,89 @@
+.filter-sale {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  background-color: rgba(#fff, 0.7);
+  align-items: center;
+  height: 120px;
+  padding: 0 2rem;
+  border-radius: 20px;
+  .filter-search {
+    margin-top: 2rem;
+    height: 40px;
+    margin-left: 3rem;
+    font-family: 'Arsenal', sans-serif;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+  }
+  .filter-sale-select {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+   
+    align-items: center;
+    .filter-sale-item {
+      border-right: 1px solid #019cde;
+      padding: 0 1rem;
+      &:last-child {
+        border-right: none;
+        padding-right: none;
+      }
+      &:last-child {
+        padding-left: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .filter-sale {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 70%;
+    align-self: center;
+
+    height: 100%;
+    border-radius: 20px;
+    .filter-search {
+      width: 150px;
+      justify-self: end;
+      font-size: 1.2rem;
+      margin-top:0;
+      margin-right: 1rem;
+    }
+    .filter-sale-select {
+      display: grid;
+      grid-template-columns: 1fr;
+      .filter-sale-item {
+        border-right: none;
+        padding: 0 1rem;
+        margin-bottom: 0.6rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .filter-sale {
+    width: 100%;
+
+    .filter-search {
+      width: 110px;
+      height: 30px;
+      font-size: 1rem;
+      margin-top: 0.2rem;
+    }
+    .filter-sale-select {
+      .filter-sale-item {
+      }
+    }
+  }
+}
+@media screen and (max-width: 545px) {
+  .filter-sale {
+    .filter-search {
+    }
+    .filter-sale-select {
+      .filter-sale-item {
+        padding: 0;
+      }
+    }
+  }
+}
