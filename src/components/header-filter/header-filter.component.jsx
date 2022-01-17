@@ -41,11 +41,11 @@ const VariantButtonGroup = function () {
     background: 'rgba(255,255,255,0.7)',
 
     '&:hover': {
-      backgroundColor: blue[700],
+      backgroundColor: "#019cde",
       color: 'white',
     },
     '&.button-active': {
-      backgroundColor: blue[700],
+      backgroundColor: "#019cde",
       color: 'white',
     },
   }));
@@ -94,15 +94,17 @@ const VariantButtonGroup = function () {
       </Box>
       <div className="filter-container">
         {active === '1' && (
-          <FilterSale typehouse={true} key={1}>
+          <FilterSale key={1}>
             {' '}
           </FilterSale>
+          // <FilterRent key={1}> </FilterRent>
         )}
         {active === '2' && <FilterRent key={2}> </FilterRent>}
         {active === '3' && (
-          <FilterBuild rooms={true} region={false} key={3}>
+          <FilterBuild key={3}>
             {' '}
           </FilterBuild>
+          // <FilterRent key={3}> </FilterRent>
         )}
       </div>
     </div>

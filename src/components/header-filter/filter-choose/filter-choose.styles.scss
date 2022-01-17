@@ -1,0 +1,183 @@
+.filter-choose {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  align-items: center;
+  margin-bottom: 1rem;
+  height: fit-content !important;
+  .filter-choose-title {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.5rem;
+  }
+  .filter-choose-items {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    .active {
+      border: 3px #019cde solid !important;
+    }
+    .active-address {
+      border: 1px #019cde solid !important;
+      border-radius: 20px !important;
+    }
+    .filter-choose-item {
+      display: flex;
+      align-items: center;
+      transition: all 0.05s ease-in-out;
+      white-space: nowrap;
+      height: fit-content;
+      padding: 0.8rem 1.5rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      border: 1px #019cde solid;
+      margin-right: 0.5rem;
+      img {
+        width: 25px;
+        margin-right: 0.3rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1024px) {
+  .filter-choose {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    height: fit-content !important;
+    .filter-choose-title {
+      font-size: 1.2rem;
+      color: rgba(0, 0, 0, 0.6);
+      margin-bottom: 0.5rem;
+    }
+    .filter-choose-items {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      flex-wrap: wrap;
+      row-gap: 0.5rem;
+      .active {
+        border: 3px #019cde solid !important;
+      }
+      .active-address {
+        border: 1px #019cde solid !important;
+        border-radius: 20px !important;
+      }
+      .filter-choose-item {
+        display: flex;
+        align-items: center;
+        transition: all 0.05s ease-in-out;
+        white-space: nowrap;
+        height: fit-content;
+        padding: 0.8rem 1.2rem;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        border: 1px #019cde solid;
+        margin-right: 0.5rem;
+        img {
+          width: 25px;
+          margin-right: 0.3rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .filter-choose {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    column-gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    height: fit-content !important;
+    .filter-choose-title {
+      text-align: center;
+      font-size: 1.5rem;
+      color: rgba(0, 0, 0, 0.6);
+      margin-bottom: 1rem;
+    }
+    .filter-choose-items {
+      display: flex;
+      align-items: center;
+
+      justify-content: center;
+      flex-wrap: wrap;
+      row-gap: 0.5rem;
+      .active {
+        border: 3px #019cde solid !important;
+      }
+      .active-address {
+        border: 1px #019cde solid !important;
+        border-radius: 20px !important;
+      }
+      .filter-choose-item {
+        display: flex;
+        align-items: center;
+        transition: all 0.05s ease-in-out;
+        white-space: nowrap;
+        height: fit-content;
+        padding: 0.8rem 1.2rem;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        border: 1px #019cde solid;
+        margin-right: 0.5rem;
+        img {
+          width: 25px;
+          margin-right: 0.3rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+    .filter-choose {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    column-gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    height: fit-content !important;
+    .filter-choose-title {
+      text-align: center;
+      font-size: 1.2rem;
+      color: rgba(0, 0, 0, 0.6);
+      margin-bottom: 1rem;
+    }
+    .filter-choose-items {
+      display: flex;
+      align-items: center;
+
+      justify-content: center;
+      flex-wrap: wrap;
+      row-gap: 0.5rem;
+      .active {
+        border: 3px #019cde solid !important;
+      }
+      .active-address {
+        border: 1px #019cde solid !important;
+        border-radius: 20px !important;
+      }
+      .filter-choose-item {
+        display: flex;
+        align-items: center;
+        transition: all 0.05s ease-in-out;
+        white-space: nowrap;
+        height: fit-content;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 1rem;
+        border: 1px #019cde solid;
+        margin-right: 0.5rem;
+        img {
+          width: 25px;
+          margin-right: 0.3rem;
+        }
+      }
+    }
+  }
+}

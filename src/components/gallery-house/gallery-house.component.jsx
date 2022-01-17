@@ -17,11 +17,12 @@ const GalleryHouse = ({
   name,
 }) => {
   const [active, setActive] = useState(false);
-  
+
   return (
     <div className="gallery-house">
       <Carousel
-        renderIndicator={false}
+        // { window.innerHeight < 1024 ? }
+
         renderArrowPrev={(onClickHandler, hasPrev = true, label = 'le') =>
           hasPrev && (
             <button
@@ -29,7 +30,6 @@ const GalleryHouse = ({
               type="button"
               onClick={onClickHandler}
               title={label}
-              
             >
               &#8249;
             </button>
@@ -42,14 +42,12 @@ const GalleryHouse = ({
               type="button"
               onClick={onClickHandler}
               title={label}
-             
             >
               &#8250;
             </button>
           )
         }
         infiniteLoop
-        autoPlay
       >
         {img.map(img => (
           <div className="image">
@@ -60,12 +58,19 @@ const GalleryHouse = ({
       <div className="gallery-house-right">
         <div className="gallery-house-overlay">
           <h2>{`${rooms} комнатная квартира`}</h2>
-          <div className="gallery-house-location">
-            {' '}
-            <LocationOnIcon className="gallery-icon-loc"></LocationOnIcon>
-            <div className="gallery-house-address">
-              <span>{addressCity}</span>
-              <span>{address}</span>
+          <div className="gallery-house-location-tel">
+            <div className="gallery-house-location">
+              {' '}
+              <LocationOnIcon className="gallery-icon-loc"></LocationOnIcon>
+              <div className="gallery-house-address">
+                <span>{addressCity}</span>
+                <span>{address}</span>
+              </div>
+            </div>
+
+            <div onClick={() => setActive(true)} className="gallery-tel-mobile">
+              <img src={Tel} alt="" />
+              <h5> {active ? { tel } : 'Показать телефон'}</h5>
             </div>
           </div>
           <div className="gallery-house-button-cont">

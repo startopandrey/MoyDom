@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { MenuItems } from './nav-items';
-
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 import './nav.styles.scss';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import SignImg from '../../assets/modal/sign.png';
 import SignUpImg from '../../assets/modal/sign-up.png';
+import HouseAddIcon from '../../assets/add-house.svg';
+import MapIcon from '../../assets/map.svg';
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
@@ -86,16 +88,30 @@ class Navbar extends Component {
             </ul>
           </ul>
           <div className="navbar-user">
-            <div className="navbar-user-profile">  <Link to="map-filter">
-                    <LocalActivity></LocalActivity>
-                  </Link>
+            <div className="navbar-user-profile">
+              {' '}
+              <div className='navbar-icons'>
+                <Link to="map-filter">
+                  <img
+                    src={MapIcon}
+                    style={{ width: '30px', marginRight: '0.5rem' }}
+                    alt=""
+                  />
+                </Link>{' '}
+                <Link to="post">
+                  <img
+                    src={HouseAddIcon}
+                    style={{ width: '30px', marginRight: '0.5rem' }}
+                    alt=""
+                  />
+                </Link>{' '}
+                <Link to="/favorites">
+                  <CardHeart className='nav-heart' num={10}></CardHeart>
+                </Link>
+              </div>
               {false ? (
                 <>
                   {' '}
-                
-                  <Link to="/favorites">
-                    <CardHeart num={10}></CardHeart>
-                  </Link>
                   <h4 className="navbar-user-profile-text">Мой профиль</h4>
                   <AccountCircleOutlinedIcon
                     fontSize="medium"
@@ -109,7 +125,6 @@ class Navbar extends Component {
                   ></ModalPopup>
                 </div>
               )}
-
               <ul
                 className={`${
                   this.state.clickedNav == true && 'nav-active'

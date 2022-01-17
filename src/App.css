@@ -45,7 +45,10 @@ a{
 }
 @media screen and (max-width:425px){
   .container {
-  max-width: 300px;
+  max-width: 330px;
   margin: 0 auto;
 }
+}
+fieldset{
+  border: none !important;
 }

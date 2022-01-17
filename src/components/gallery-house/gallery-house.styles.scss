@@ -5,6 +5,9 @@
 .gallery-house {
   .carousel {
     position: relative;
+    .control-dots {
+      display: none;
+    }
     .arrow {
       position: absolute;
       color: rgba(0, 0, 0, 0.6);
@@ -46,7 +49,7 @@
   }
   display: grid;
   grid-template-columns: 3fr 1fr;
-  margin: 2rem 0;
+  margin: 2rem 0 0 0;
   .gallery-house-img {
     width: 100%;
     height: auto;
@@ -193,8 +196,12 @@
 }
 @media screen and (max-width: 1024px) {
   .gallery-house {
+    margin-bottom: 5rem;
     .carousel {
       position: relative;
+      .control-dots {
+        display: block;
+      }
       .arrow-left {
         left: 20%;
       }
@@ -203,20 +210,20 @@
       }
       .thumb {
         border: none !important;
-        width: 80px !important;
+        width: 100px !important;
         cursor: pointer;
       }
       .thumbs-wrapper {
-        background: rgba(0, 0, 0, 0.34);
-        border-radius: 34px 34px 0px 0px;
+        background: rgba(0, 0, 0, 0);
+        border-radius: 0px 0px 0px 0px;
         position: absolute;
-        bottom: -20px;
-        width: 50%;
+        bottom: -90px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 70px;
-        left: 22%;
+        left: 0;
       }
     }
     grid-template-columns: 3fr 1fr; //
@@ -253,6 +260,7 @@
 }
 @media screen and (max-width: 768px) {
   .gallery-house {
+    margin-bottom: 2rem;
     .carousel {
       position: relative;
       .arrow {
@@ -282,16 +290,16 @@
         cursor: pointer;
       }
       .thumbs-wrapper {
-        background: rgba(0, 0, 0, 0.34);
-        border-radius: 34px 34px 0px 0px;
+        background: rgba(0, 0, 0, 0);
+        border-radius: 0px 0px 0px 0px;
         position: absolute;
-        bottom: -20px;
-        width: 50%;
+        bottom: -90px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 70px;
-        left: 22%;
+        left: 0;
       }
     }
     grid-template-columns: 1fr; //
@@ -302,7 +310,22 @@
     }
     .gallery-house-right {
       position: relative;
+      margin-top: 3rem;
       .gallery-house-overlay {
+        .gallery-house-location-tel{
+          display: flex;
+          flex-direction: column;
+        
+        }
+         .gallery-tel-mobile {
+           margin-top: 0.5rem;
+          margin-left: 0.5rem;
+           img{
+             margin-right: 0.3rem;
+           }
+      display: flex;
+      align-items: center;
+    }
         h2 {
           font-size: 1.5rem; //
           margin-bottom: 0.5rem; //
@@ -334,7 +357,7 @@
         width: 100%; //
         right: -20px;
         top: 20px;
-        height: 150px; //
+        height: 165px; //
         border: none;
         .gallery-house-location {
           .gallery-icon-loc {
@@ -380,20 +403,20 @@
       }
       .thumb {
         border: none !important;
-        width: 65px !important;
+        width: 70px !important;
         cursor: pointer;
       }
       .thumbs-wrapper {
-        background: rgba(0, 0, 0, 0.34);
-        border-radius: 20px 20px 0px 0px;
+        background: rgba(0, 0, 0, 0);
+        border-radius: 0px 0px 0px 0px;
         position: absolute;
-        bottom: -20px;
-        width: 50%;
+        bottom: -90px;
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 55px;
-        left: 22%;
+        height: 70px;
+        left: 0;
       }
     }
     grid-template-columns: 1fr; //
@@ -402,6 +425,7 @@
 
       border-radius: 18px;
     }
+   
     .gallery-house-right {
       position: relative;
       .gallery-house-overlay {
@@ -437,7 +461,7 @@
         right: -20px;
         padding-top: 0.5rem;
         top: 20px;
-        height: 150px; //
+        height: 165px; //
         border: none;
         .gallery-house-location {
           .gallery-icon-loc {
@@ -445,7 +469,7 @@
           }
           .gallery-house-address {
             span {
-              font-size: 0.7rem; //
+              font-size: 0.85rem; //
             }
           }
         }
@@ -501,7 +525,7 @@
         padding-top: 0.5rem;
 
         top: 20px;
-        height: 130px; //
+        height: 160px; //
         border: none;
         .gallery-house-location {
           .gallery-icon-loc {

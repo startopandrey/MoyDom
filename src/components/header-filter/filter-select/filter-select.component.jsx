@@ -35,7 +35,7 @@ export default function BasicSelect({ name, caterories, title }) {
           >
             {caterories.map((text, i) => (
               <MenuItem className="demo-simple-select-options" value={i * 10}>
-                <CheckIcon className="demo-simple-select-icon"></CheckIcon>
+             
                 {text}
               </MenuItem>
             ))}

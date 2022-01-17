@@ -244,7 +244,7 @@ const Profile = () => {
                     className="profile-settings-contact-textfield"
                     hiddenLabel
                     sx={{
-                      fontFamily: 'Montserrat,sans-serif',
+                      fontFamily: 'Montserrat, hsans-serif',
                     }}
                     id="filled-hidden-label-normal"
                     defaultValue=""
@@ -262,13 +262,26 @@ const Profile = () => {
               )}
               {settingsButton === 2 && (
                 <div className="profile-settings-change-tel">
-                  <h3>Контактное лицо</h3>
-                  <Input
-                    placeholder=""
-                    value={value}
-                    onChange={setValue}
-                    defaultCountry="RU"
-                  />
+                  <h3 className="profile-settings-change-tel-title">
+                    Новый номер телефона
+                  </h3>
+                  <div className="profile-tel-input-container">
+                    <Input
+                      className="profile-tel-input"
+                      placeholder="+998 __ ___ __ __"
+                      value={value}
+                      onChange={setValue}
+                      defaultCountry="RU"
+                    />
+                  </div>
+                  <div style={{display:'flex', justifyContent:'center'}}>
+                    <Button
+                      className="profile-settings-change-tel"
+                      variant="outlined"
+                    >
+                      Сохранить
+                    </Button>
+                  </div>
                 </div>
               )}
               {settingsButton === 3 && (
@@ -287,7 +300,10 @@ const Profile = () => {
               {settingsButton === 4 && (
                 <div className="profile-delete">
                   <div className="profile-delete-button-container">
-                    <Button className="profile-delete-button" variant="outlined">
+                    <Button
+                      className="profile-delete-button"
+                      variant="outlined"
+                    >
                       Удалить мою учетную запись
                     </Button>
                   </div>

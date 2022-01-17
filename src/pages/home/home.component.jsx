@@ -194,24 +194,28 @@ const Home = () => (
           </div>
         </div>
         <div className="home-articles-cards">
-          <div
-            className="home-articles-card mobile-height"
-            style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
-          >
-            <h3>Купить комнату</h3>
-            <span>966 предложений</span>
-          </div>
+          {' '}
+          <Link to="/blog/acticle">
+            <div
+              className="home-articles-card mobile-height"
+              style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
+            >
+              <h3>Купить комнату</h3>
+              <span>966 предложений</span>
+            </div>{' '}
+          </Link>
           <div className="home-articles-card-icon mobile-hidden">
-            <img src={HomeArticleIconTs} alt="" />
-            <h3>Бизнес-центры</h3>
+            <img src={HomeArticleIconTs} alt="" /> <h3>Бизнес-центры</h3>
           </div>
-          <div
-            className="home-articles-card"
-            style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
-          >
-            <h3>Купить квартиру в новом доме</h3>
-            <span>966 предложений</span>
-          </div>{' '}
+          <Link to="/blog/acticle">
+            <div
+              className="home-articles-card"
+              style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
+            >
+              <h3>Купить квартиру в новом доме</h3>
+              <span>966 предложений</span>
+            </div>
+          </Link>
           <div
             className="home-articles-card-icon mobile-hidden"
             style={{ background: '#F8F8F8' }}
@@ -219,34 +223,51 @@ const Home = () => (
             <img src={HomeArticleIconAuto} alt="" />
             <h3 style={{ color: '#5894C9' }}>Бизнес-центры</h3>
           </div>
-          <div
-            className="home-articles-card"
-            style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
-          >
-            <h3>Купить таунханус</h3>
-            <span>966 предложений</span>
-          </div>
-          <div
-            className="home-articles-card"
-            style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
-          >
-            <h3>Купить участок</h3>
-            <span>966 предложений</span>
-          </div>
-          <div
-            className="home-articles-card "
-            style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
-          >
-            <h3>Купить комнату</h3>
-            <span>966 предложений</span>
-          </div>
-          <div
-            className="home-articles-card mobile-height"
-            style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
-          >
-            <h3>Купить комнату</h3>
-            <span>966 предложений</span>
-          </div>
+          <Link to="/blog/acticle">
+            <div
+              className="home-articles-card"
+              style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
+            >
+              <h3>Купить таунханус</h3>
+              <span>966 предложений</span>
+            </div>
+          </Link>
+          <Link to="/blog/acticle">
+            <div
+              className="home-articles-card"
+              style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
+            >
+              <h3>Купить участок</h3>
+              <span>966 предложений</span>
+            </div>
+          </Link>
+          <Link to="/blog/acticle">
+            <div
+              className="home-articles-card "
+              style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
+            >
+              <h3>Купить комнату</h3>
+              <span>966 предложений</span>
+            </div>
+          </Link>
+          <Link to="/blog/acticle">
+            <div
+              className="home-articles-card mobile-height"
+              style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
+            >
+              <h3>Купить комнату</h3>
+              <span>966 предложений</span>
+            </div>
+          </Link>
+          <Link to="/blog/acticle">
+            <div
+              className="home-articles-card mobile-height"
+              style={{ background: `url("${HomeNewFullImg}") no-repeat` }}
+            >
+              <h3>Купить комнату</h3>
+              <span>966 предложений</span>
+            </div>
+          </Link>
         </div>
         <div className="mobile-add home-articles-button">
           <Link to="/blog/acticle">

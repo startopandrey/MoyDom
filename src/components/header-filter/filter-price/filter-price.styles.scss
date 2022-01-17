@@ -1,75 +1,208 @@
+.filter-price-container-s {
+  width: 100px;
+  
+  border-radius: 20px;
+  background: #fff;
 
-.filter-price-title {
-  font-family: 'Arsenal', sans-serif;
-  font-weight: 700;
-  font-size: 0.85rem;
-  margin-bottom: 0.5rem;
+  fieldset {
+    border: none !important;
+  }
+  .checkbox-filter {
+    .filter-form-input[data-shrink='true'] {
+      display: block !important;
+    }
+    .overlay {
+      .filter-inputs-container {
+        display: flex !important;
+        flex-direction: column;
+      }
+    }
+  }
 }
-.subtitle {
-  position: absolute;
-  top: -8px;
-  color: #6a6a6a;
-  left: 45px;
-  font-size: 0.5rem;
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+  border-radius: 20px !important;
+  // transform: translateX(120px) !important;
 }
-.filter-price {
-  position: relative;
-  .filter-price-container {
-    display: flex;
-    align-items: center;
-    height: 30px;
-    .filter-price-input {
-      font-size: 0.7rem;
-      ::placeholder {
+.filter-price-overlay-container {
+  padding: 1rem 2rem;
+  border-radius: 20px !important;
+
+  .filter-overlay-input-container {
+    .filter-input {
+      width: 100%;
+      padding: 0.5rem 1rem;
+      margin-bottom: 0.5rem;
+      background: rgba(1, 156, 222, 0.14) !important;
+      fieldset {
         border: none !important;
-        font-size: 0.7 rem;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 500;
-        width: 100%;
       }
-      &::before {
-        border: none;
+      border-radius: 20px;
+      input {
+        padding: 0;
       }
     }
   }
-}
-@media screen and (max-width: 1400px) {
-  .filter-price {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .filter-price {
-    .filter-price-container {
-      display: flex;
-      align-items: center;
-
-      .filter-price-input {
-        ::placeholder {
-          border: none !important;
-          font-size: 0.7rem;
-          font-family: 'Roboto', sans-serif;
-          font-weight: 500;
-          width: 100%;
-        }
-        &::before {
-          border: none;
-        }
-      }
-    }
-  }
-
-  .filter-price-title {
+  .filter-bottom-buttons {
     display: flex;
-    align-items: center;
-    font-family: 'Arsenal', sans-serif;
-    font-weight: 700;
-
-    margin-bottom: 0.5rem;
+    .filter-curr-button {
+      margin-right: 0.4rem;
+      border-radius: 20px;
+      border: 1px solid #019cde;
+    }
+    .active {
+      background: #019cde;
+    }
+    .filter-submit {
+      background: #019cde;
+      font-weight: 600;
+      border-radius: 20px;
+      font-family: 'Montserrat';
+      text-transform: capitalize;
+      .filter-submit-icon {
+        margin-left: 0.2rem;
+      }
+    }
   }
-  .filter-price {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+}
+@media screen and (max-width: 768px) {
+  .filter-price-container-s {
+    width: 100%;
+  
+    background: #fff;
+   
+
+    fieldset {
+      border: none !important;
+    }
+    .checkbox-filter {
+      .filter-form-input[data-shrink='true'] {
+        display: block !important;
+      }
+      .overlay {
+        .filter-inputs-container {
+          display: flex !important;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+    border-radius: 20px !important;
+    // transform: translateX(120px) !important;
+  }
+  .filter-price-overlay-container {
+    padding: 1rem 2rem;
+    border-radius: 20px !important;
+
+    .filter-overlay-input-container {
+      .filter-input {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.5rem;
+        background: rgba(1, 156, 222, 0.14) !important;
+        fieldset {
+          border: none !important;
+        }
+        border-radius: 20px;
+        input {
+          padding: 0;
+        }
+      }
+    }
+    .filter-bottom-buttons {
+      display: flex;
+      .filter-curr-button {
+        margin-right: 0.4rem;
+        border-radius: 20px;
+        border: 1px solid #019cde;
+      }
+      .active {
+        background: #019cde;
+      }
+      .filter-submit {
+        background: #019cde;
+        font-weight: 600;
+        border-radius: 20px;
+        font-family: 'Montserrat';
+        text-transform: capitalize;
+        .filter-submit-icon {
+          margin-left: 0.2rem;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  .filter-price-container-s {
+    width: 100%;
+  
+    background: #fff;
+   
+
+    fieldset {
+      border: none !important;
+    }
+    .checkbox-filter {
+      .filter-form-input[data-shrink='true'] {
+        display: block !important;
+      }
+      .overlay {
+        .filter-inputs-container {
+          display: flex !important;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+  .css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper {
+    border-radius: 20px !important;
+    // transform: translateX(120px) !important;
+  }
+  .filter-price-overlay-container {
+    padding: 1rem 2rem;
+    border-radius: 20px !important;
+
+    .filter-overlay-input-container {
+      .filter-input {
+        width: 100%;
+        padding: 0.5rem 1rem;
+        margin-bottom: 0.5rem;
+        background: rgba(1, 156, 222, 0.14) !important;
+        fieldset {
+          border: none !important;
+        }
+        border-radius: 20px;
+        input {
+          padding: 0;
+        }
+      }
+    }
+    .filter-bottom-buttons {
+      display: flex;
+      flex-direction: column;
+      
+      .filter-curr-button {
+        margin-bottom: 0.5rem;
+        margin-right: 0.4rem;
+        border-radius: 20px;
+        font-size: 0.7rem;
+        border: 1px solid #019cde;
+      }
+      .active {
+        background: #019cde;
+      }
+      .filter-submit {
+        background: #019cde;
+        font-weight: 600;
+        border-radius: 20px;
+font-size: 0.8rem;
+margin-top: 0.5rem;
+        font-family: 'Montserrat';
+        text-transform: capitalize;
+        .filter-submit-icon {
+          margin-left: 0.2rem;
+        }
+      }
+    }
   }
 }

@@ -34,14 +34,15 @@ export default function MultipleSelectCheckmarks({ categories, title,name }) {
   return (
     <div className="filter-checkbox-container">
       <h3 className="filter-sale-title">{title}</h3>
-      <FormControl className="filter-form" sx={{ width: '100%' }}>
+      <FormControl className="filter-form" fullWidth>
         <InputLabel
-          id="demo-simple-select-helper-label"
-          className="demo-simple-select-helper-label"
+          labelId="demo-multiple-checkbox-label"
+          className="demo-simple-select-label demo-simple-checkbox-label"
         >
           {name}
         </InputLabel>
         <Select
+    
           labelId="demo-multiple-checkbox-label"
           className="demo-simple-select-label demo-simple-checkbox-label"
           id="demo-multiple-checkbox"

@@ -261,7 +261,12 @@ const Newbuild = () => {
           name="Jamshid Kamolov"
           img={[GalleryPhoto1, GalleryPhoto1, GalleryPhoto1, GalleryPhoto1]}
         ></GalleryHouse>
-
+        <div className="newbuild-description">
+          <NewbuildDesription
+            title="Описание"
+            text={DESCRIPTION}
+          ></NewbuildDesription>
+        </div>
         <div className="container">
           <div className="newbuild-rooms">
             <NewbuildRooms
@@ -294,12 +299,6 @@ const Newbuild = () => {
               flats="26"
             ></NewbuildRooms>
           </div>{' '}
-          <div className="newbuild-description">
-            <NewbuildDesription
-              title="Описание"
-              text={DESCRIPTION}
-            ></NewbuildDesription>
-          </div>
           <div className="newbuild-feature">
             <h3 className="newbuild-title">Характеристики ЖК</h3>
             <div className="newbuild-feature-container">
